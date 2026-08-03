@@ -19,7 +19,18 @@
 │   └── start.sh            # 生产环境启动脚本
 ├── src/
 │   ├── app/                # 页面路由与布局
-│   ├── components/ui/      # Shadcn UI 组件库
+│   │   ├── about/          # 关于我们页面
+│   │   ├── contact/        # 联系我们页面
+│   │   ├── products/       # 产品列表页 & 产品详情页 [slug]
+│   │   ├── layout.tsx      # 根布局 (Header + Footer)
+│   │   ├── page.tsx        # 首页
+│   │   └── globals.css     # 全局样式 + 品牌色
+│   ├── components/
+│   │   ├── ui/             # Shadcn UI 组件库
+│   │   ├── Header.tsx      # 导航栏 (client component)
+│   │   └── Footer.tsx      # 页脚
+│   ├── data/
+│   │   └── products.ts     # 产品数据 (7 products, 2 categories)
 │   ├── hooks/              # 自定义 Hooks
 │   ├── lib/                # 工具库
 │   │   └── utils.ts        # 通用工具函数 (cn)
