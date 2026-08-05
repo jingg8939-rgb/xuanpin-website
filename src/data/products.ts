@@ -54,7 +54,7 @@ export const products: Product[] = [
       { label: "Moisture Content", value: "\u22640.1%" },
       { label: "Biodegradation Rate", value: "\u226590% within 180 days" },
     ],
-    image: "",
+    image: "/products/masterbatch-pellets.jpg",
   },
   {
     slug: "pbat-biodegradable-masterbatch",
@@ -90,7 +90,7 @@ export const products: Product[] = [
       { label: "Biodegradability", value: "\u226590% in 180 days" },
       { label: "Shelf Life", value: "12 months in proper storage" },
     ],
-    image: "",
+    image: "/products/masterbatch-pellets.jpg",
   },
   {
     slug: "pla-compound-masterbatch",
@@ -126,7 +126,7 @@ export const products: Product[] = [
       { label: "Form", value: "Cylindrical granules, 3-4mm" },
       { label: "Moisture Content", value: "\u22640.05%" },
     ],
-    image: "",
+    image: "/products/masterbatch-pellets.jpg",
   },
 
   // ─── Performance Enhancement ──────────────────────────────────────
@@ -164,7 +164,7 @@ export const products: Product[] = [
       { label: "Form", value: "Round pellets, 2-3mm" },
       { label: "Moisture Content", value: "\u22640.1%" },
     ],
-    image: "",
+    image: "/products/masterbatch-pellets.jpg",
   },
   {
     slug: "barium-sulfate-masterbatch",
@@ -200,7 +200,7 @@ export const products: Product[] = [
       { label: "Form", value: "Cylindrical granules, 3-4mm" },
       { label: "Processing Temperature", value: "180-280\u00b0C" },
     ],
-    image: "",
+    image: "/products/masterbatch-pellets.jpg",
   },
   {
     slug: "talc-masterbatch",
@@ -236,7 +236,7 @@ export const products: Product[] = [
       { label: "Form", value: "Cylindrical granules, 3-4mm" },
       { label: "Talc Content", value: "70-85%" },
     ],
-    image: "",
+    image: "/products/masterbatch-pellets.jpg",
   },
   {
     slug: "defoamer-masterbatch",
@@ -272,7 +272,7 @@ export const products: Product[] = [
       { label: "Form", value: "Cylindrical granules, 3-4mm" },
       { label: "Active Component", value: "Calcium oxide blend" },
     ],
-    image: "",
+    image: "/products/masterbatch-pellets.jpg",
   },
   {
     slug: "calcium-carbonate-masterbatch",
@@ -308,7 +308,7 @@ export const products: Product[] = [
       { label: "Form", value: "Cylindrical granules, 3-4mm" },
       { label: "Processing Temperature", value: "160-260\u00b0C" },
     ],
-    image: "",
+    image: "/products/masterbatch-pellets.jpg",
   },
 ];
 
