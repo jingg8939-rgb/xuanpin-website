@@ -156,13 +156,21 @@ export default function HomePage() {
               {biodegradableProducts.map((product) => (
                 <Link
                   key={product.slug}
-                  href={`/products/${product.slug}`}
+                  href="/products"
                   className="group overflow-hidden rounded-lg border border-gray-100 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="flex h-48 items-center justify-center bg-gradient-to-br from-green-50 to-green-100/50">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/80 shadow-sm">
-                      <Leaf className="h-8 w-8 text-green-500" />
-                    </div>
+                    {product.image ? (
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/80 shadow-sm">
+                        <Leaf className="h-8 w-8 text-green-500" />
+                      </div>
+                    )}
                   </div>
                   <div className="p-6">
                     <span className="inline-block rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-700">
@@ -171,11 +179,14 @@ export default function HomePage() {
                     <h4 className="mt-3 text-lg font-semibold text-[#333333] group-hover:text-[#C8102E]">
                       {product.name}
                     </h4>
+                    <p className="mt-1 text-sm text-[#999999]">
+                      {product.nameCn}
+                    </p>
                     <p className="mt-2 text-sm leading-relaxed text-[#666666]">
                       {product.shortDescription}
                     </p>
                     <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#C8102E]">
-                      Learn More
+                      View Details
                       <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     </span>
                   </div>
@@ -203,13 +214,21 @@ export default function HomePage() {
               {performanceProducts.map((product) => (
                 <Link
                   key={product.slug}
-                  href={`/products/${product.slug}`}
+                  href="/products"
                   className="group overflow-hidden rounded-lg border border-gray-100 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="flex h-40 items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100/50">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/80 shadow-sm">
-                      <Zap className="h-7 w-7 text-[#C8102E]/60" />
-                    </div>
+                    {product.image ? (
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/80 shadow-sm">
+                        <Zap className="h-7 w-7 text-[#C8102E]/60" />
+                      </div>
+                    )}
                   </div>
                   <div className="p-6">
                     <span className="inline-block rounded-full bg-[#FDE8EB] px-2.5 py-0.5 text-xs font-medium text-[#C8102E]">
@@ -218,11 +237,14 @@ export default function HomePage() {
                     <h4 className="mt-3 text-lg font-semibold text-[#333333] group-hover:text-[#C8102E]">
                       {product.name}
                     </h4>
+                    <p className="mt-1 text-sm text-[#999999]">
+                      {product.nameCn}
+                    </p>
                     <p className="mt-2 text-sm leading-relaxed text-[#666666]">
                       {product.shortDescription}
                     </p>
                     <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#C8102E]">
-                      Learn More
+                      View Details
                       <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     </span>
                   </div>

@@ -69,7 +69,11 @@ export default async function ProductDetailPage({
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
             {/* Image Gallery */}
-            <ProductDetailClient productSlug={product.slug} />
+            <ProductDetailClient
+              productSlug={product.slug}
+              productImage={product.image}
+              productName={product.name}
+            />
 
             {/* Product Info */}
             <div className="flex flex-col justify-center">
@@ -85,6 +89,7 @@ export default async function ProductDetailPage({
               <h1 className="mt-4 text-3xl font-bold tracking-tight text-[#333333] sm:text-4xl">
                 {product.name}
               </h1>
+              <p className="mt-1 text-lg text-[#999999]">{product.nameCn}</p>
               <p className="mt-4 text-lg leading-relaxed text-[#666666]">
                 {product.description}
               </p>
