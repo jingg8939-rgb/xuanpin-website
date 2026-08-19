@@ -68,6 +68,7 @@
     "backToProducts": "返回产品列表"
   },
   "productDetail": {
+    "backToProducts": "返回产品列表",
     "description": "产品描述",
     "applications": "应用领域",
     "features": "核心特点与优势",
