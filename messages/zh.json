@@ -131,6 +131,7 @@
       "standardBag": "标准袋",
       "standardLabel": "标准品质",
       "premium": {
+        "badge": "优质",
         "label": "使用纳米/改性母粒",
         "quality": "卓越品质",
         "features": [
@@ -141,6 +142,7 @@
         ]
       },
       "standard": {
+        "badge": "标准",
         "label": "传统填充料",
         "quality": "标准品质",
         "features": [

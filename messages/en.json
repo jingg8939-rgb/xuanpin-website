@@ -131,6 +131,7 @@
       "standardBag": "STANDARD BAG",
       "standardLabel": "Standard Quality",
       "premium": {
+        "badge": "PREMIUM",
         "label": "With Nano/Modified Masterbatch",
         "quality": "Superior Quality",
         "features": [
@@ -141,6 +142,7 @@
         ]
       },
       "standard": {
+        "badge": "STANDARD",
         "label": "Conventional Filler",
         "quality": "Standard Quality",
         "features": [
