@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "getQuote": "Get a Quote",
+    "menu": "Menu",
+    "closeMenu": "Close menu"
+  },
+  "home": {
+    "hero": {
+      "title": "Global Masterbatch Solutions Provider",
+      "subtitle": "Factory Direct · R&D Customization · Global Export",
+      "exploreProducts": "Explore Products",
+      "contactUs": "Contact Us"
+    },
+    "advantages": {
+      "title": "Why Choose Xuanpin",
+      "factory": {
+        "title": "Factory Direct Supply",
+        "desc": "Direct from our manufacturing facility, ensuring competitive pricing and consistent quality control."
+      },
+      "rnd": {
+        "title": "R&D Customization",
+        "desc": "Dedicated R&D team providing tailored formulations to meet your specific application requirements."
+      },
+      "export": {
+        "title": "Global Export",
+        "desc": "Serving customers in 30+ countries with reliable logistics and international trade expertise."
+      },
+      "quality": {
+        "title": "Quality Assurance",
+        "desc": "ISO-certified quality management system with rigorous testing at every production stage."
+      }
+    },
+    "products": {
+      "title": "Our Products",
+      "subtitle": "Comprehensive masterbatch solutions for diverse industrial applications",
+      "biodegradable": {
+        "title": "Biodegradable Solutions",
+        "desc": "Eco-friendly masterbatch products for sustainable packaging and agricultural applications"
+      },
+      "performance": {
+        "title": "Performance Enhancement",
+        "desc": "Functional masterbatch products that enhance material properties and reduce costs"
+      },
+      "viewDetails": "View Details",
+      "viewAll": "View All Products"
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "subtitle": "Contact our team for customized masterbatch solutions and competitive quotes",
+      "contactUs": "Contact Us",
+      "requestQuote": "Request a Quote"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Explore our comprehensive range of masterbatch solutions",
+    "categories": {
+      "all": "All Products",
+      "biodegradable": "Biodegradable Solutions",
+      "performance": "Performance Enhancement"
+    },
+    "learnMore": "Learn More",
+    "applications": "Applications",
+    "backToProducts": "Back to Products"
+  },
+  "productDetail": {
+    "description": "Description",
+    "applications": "Applications",
+    "features": "Key Features & Benefits",
+    "specifications": "Technical Specifications",
+    "relatedProducts": "Related Products",
+    "requestQuote": "Request a Quote",
+    "parameter": "Parameter",
+    "value": "Value"
+  },
+  "about": {
+    "title": "About Xuanpin",
+    "subtitle": "Leading manufacturer of high-performance masterbatch solutions",
+    "intro": {
+      "title": "Company Introduction",
+      "content": "Jiangxi Xuanpin New Materials Co., Ltd. is a professional manufacturer specializing in the research, development, and production of various masterbatch products. With state-of-the-art manufacturing facilities and a dedicated R&D team, we provide comprehensive solutions for the plastics industry worldwide."
+    },
+    "mission": {
+      "title": "Mission & Vision",
+      "mission": "To deliver innovative masterbatch solutions that enhance product performance while promoting sustainable manufacturing practices.",
+      "vision": "To become the global leader in masterbatch technology, recognized for quality, innovation, and customer service excellence."
+    },
+    "manufacturing": {
+      "title": "Manufacturing & Quality",
+      "facility": {
+        "title": "Advanced Facility",
+        "desc": "50,000+ tons annual capacity with 8+ production lines"
+      },
+      "rd": {
+        "title": "R&D Center",
+        "desc": "Dedicated research team developing cutting-edge formulations"
+      },
+      "quality": {
+        "title": "Quality Control",
+        "desc": "ISO-certified quality management with rigorous testing"
+      },
+      "global": {
+        "title": "Global Reach",
+        "desc": "Exporting to 30+ countries with reliable logistics"
+      }
+    },
+    "stats": {
+      "capacity": "Annual Capacity",
+      "countries": "Countries Served",
+      "team": "Team Members",
+      "lines": "Production Lines"
+    },
+    "milestones": {
+      "title": "Our Journey",
+      "founded": {
+        "year": "2015",
+        "title": "Company Founded",
+        "desc": "Established in Jiangxi with initial focus on calcium carbonate masterbatch"
+      },
+      "expansion": {
+        "year": "2017",
+        "title": "Product Line Expansion",
+        "desc": "Added PPA, talc, and defoamer masterbatch production lines"
+      },
+      "export": {
+        "year": "2019",
+        "title": "Export Business Launch",
+        "desc": "Began international operations, serving Southeast Asian markets"
+      },
+      "innovation": {
+        "year": "2021",
+        "title": "Biodegradable Solutions",
+        "desc": "Launched PBAT and PLA compound masterbatch for sustainable packaging"
+      },
+      "growth": {
+        "year": "2023",
+        "title": "Global Expansion",
+        "desc": "Expanded to European and American markets with 30+ country presence"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team for inquiries and quotes",
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "addressValue": "Jiangxi Xuanpin New Materials Co., Ltd., Jiangxi Province, China",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours",
+      "hoursValue": "Monday - Friday: 9:00 AM - 6:00 PM (GMT+8)"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Your Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "product": "Product Interest",
+      "selectProduct": "Select a product",
+      "message": "Message",
+      "submit": "Submit Inquiry",
+      "submitting": "Submitting...",
+      "success": "Thank you! We will get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "map": {
+      "title": "Our Location"
+    }
+  },
+  "footer": {
+    "about": "Professional manufacturer of high-performance masterbatch solutions, serving the global plastics industry with quality and innovation.",
+    "quickLinks": "Quick Links",
+    "products": "Products",
+    "biodegradable": "Biodegradable Solutions",
+    "performance": "Performance Enhancement",
+    "contact": "Contact Info",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

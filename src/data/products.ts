@@ -3,325 +3,399 @@ export interface ProductSpec {
   value: string;
 }
 
-export interface Product {
-  slug: string;
+export interface LocalizedContent {
   name: string;
-  nameCn: string;
-  category: "biodegradable" | "performance";
-  categoryLabel: string;
   shortDescription: string;
   description: string;
   applications: string[];
   features: string[];
-  specifications: ProductSpec[];
-  /** Path to product image in /public, e.g. "/products/pbat-ab.jpg". Empty = use placeholder. */
+  categoryLabel: string;
+}
+
+export interface Product {
+  slug: string;
+  category: "biodegradable" | "performance";
   image: string;
+  specifications: ProductSpec[];
+  en: LocalizedContent;
+  zh: LocalizedContent;
+}
+
+export type Locale = "en" | "zh";
+
+export function getLocalizedProduct(product: Product, locale: Locale): Product & LocalizedContent {
+  const content = product[locale];
+  return {
+    ...product,
+    ...content,
+  };
+}
+
+export function getAllProductsLocalized(locale: Locale): (Product & LocalizedContent)[] {
+  return products.map((p) => getLocalizedProduct(p, locale));
 }
 
 export const products: Product[] = [
   // ─── Biodegradable Solutions ───────────────────────────────────────
   {
     slug: "pbat-ab-masterbatch-system",
-    name: "PBAT A/B Masterbatch System",
-    nameCn: "PBAT\u590D\u5408\u6BCD\u7C92\u7CFB\u7EDF",
     category: "biodegradable",
-    categoryLabel: "Biodegradable Solutions",
-    shortDescription:
-      "Two-component PBAT compound masterbatch system for fully biodegradable film and bag production. Component A is PBAT resin compound, Component B is the additive package.",
-    description:
-      "Our PBAT A/B Masterbatch System is a revolutionary two-component solution designed for manufacturers transitioning to fully biodegradable film and bag production. Component A delivers the PBAT resin matrix, while Component B contains the optimized additive package for processing stability, mechanical performance, and biodegradability. This dual-component approach allows precise control over the final product properties and ensures consistent quality across production runs.",
-    applications: [
-      "Shopping bags",
-      "Garbage bags",
-      "Food packaging films",
-      "Agricultural mulch films",
-    ],
-    features: [
-      "Two-component system for precise formulation control",
-      "Fully biodegradable per EN 13432 and ASTM D6400",
-      "Excellent film blowability with stable bubble",
-      "Superior sealing strength and mechanical properties",
-      "Compatible with conventional blown film equipment",
-      "Flexible A:B ratio for customized performance",
-    ],
+    image: "/products/masterbatch-pellets.jpg",
     specifications: [
       { label: "Carrier", value: "PBAT" },
       { label: "Addition", value: "A:B ratio per formulation guide" },
       { label: "Melt Flow Index", value: "2-8 g/10min" },
-      { label: "Density", value: "1.20-1.30 g/cm\u00b3" },
-      { label: "Processing Temperature", value: "140-180\u00b0C" },
+      { label: "Density", value: "1.20-1.30 g/cm³" },
+      { label: "Processing Temperature", value: "140-180°C" },
       { label: "Form", value: "Cylindrical granules, 3-4mm" },
-      { label: "Moisture Content", value: "\u22640.1%" },
-      { label: "Biodegradation Rate", value: "\u226590% within 180 days" },
+      { label: "Moisture Content", value: "≤0.1%" },
+      { label: "Biodegradation Rate", value: "≥90% within 180 days" },
     ],
-    image: "/products/masterbatch-pellets.jpg",
+    en: {
+      name: "PBAT A/B Masterbatch System",
+      categoryLabel: "Biodegradable Solutions",
+      shortDescription: "Two-component PBAT compound masterbatch system for fully biodegradable film and bag production.",
+      description: "Our PBAT A/B Masterbatch System is a revolutionary two-component solution designed for manufacturers transitioning to fully biodegradable film and bag production. Component A delivers the PBAT resin matrix, while Component B contains the optimized additive package for processing stability, mechanical performance, and biodegradability. This dual-component approach allows precise control over the final product properties and ensures consistent quality across production runs.",
+      applications: ["Shopping bags", "Garbage bags", "Food packaging films", "Agricultural mulch films"],
+      features: [
+        "Two-component system for precise formulation control",
+        "Fully biodegradable per EN 13432 and ASTM D6400",
+        "Excellent film blowability with stable bubble",
+        "Superior sealing strength and mechanical properties",
+        "Compatible with conventional blown film equipment",
+        "Flexible A:B ratio for customized performance",
+      ],
+    },
+    zh: {
+      name: "PBAT复合母粒系统",
+      categoryLabel: "可生物降解系列",
+      shortDescription: "双组分PBAT复合母粒系统，用于全生物降解薄膜和袋子生产。",
+      description: "我们的PBAT A/B母粒系统是一款革命性的双组分解决方案，专为向全生物降解薄膜和袋子生产转型的制造商设计。A组分提供PBAT树脂基体，B组分包含优化的添加剂包，用于加工稳定性、机械性能和生物降解性。这种双组分方法可以精确控制最终产品性能，并确保生产批次间的质量一致性。",
+      applications: ["购物袋", "垃圾袋", "食品包装膜", "农用 mulch 膜"],
+      features: [
+        "双组分系统，精确配方控制",
+        "符合EN 13432和ASTM D6400标准，完全生物降解",
+        "优异的吹膜性能，泡管稳定",
+        "卓越的密封强度和机械性能",
+        "兼容传统吹膜设备",
+        "灵活的A:B比例，定制性能",
+      ],
+    },
   },
   {
     slug: "pbat-biodegradable-masterbatch",
-    name: "PBAT Biodegradable Masterbatch",
-    nameCn: "PBAT\u751F\u7269\u964D\u89E3\u6BCD\u7C92",
     category: "biodegradable",
-    categoryLabel: "Biodegradable Solutions",
-    shortDescription:
-      "Fully biodegradable masterbatch based on PBAT resin, compliant with EN 13432 and OK Compost standards.",
-    description:
-      "Our PBAT Biodegradable Masterbatch is a single-component, fully biodegradable solution based on premium PBAT resin. It is designed for manufacturers who need a straightforward, drop-in replacement for conventional polyethylene in film and packaging applications. Certified compliant with EN 13432 and OK Compost standards, this masterbatch delivers reliable biodegradability without sacrificing processing ease or end-product quality.",
-    applications: [
-      "Compostable bags",
-      "Food service packaging",
-      "Disposable cutlery",
-      "Agricultural films",
-    ],
-    features: [
-      "EN 13432 and OK Compost certified",
-      "Single-component ease of use",
-      "High biodegradability (\u226590% in 180 days)",
-      "Excellent clarity and surface finish",
-      "Good elongation and tear resistance",
-      "Compatible with standard film extrusion lines",
-    ],
+    image: "/products/masterbatch-pellets.jpg",
     specifications: [
       { label: "Carrier", value: "PBAT" },
       { label: "Addition", value: "20-100%" },
       { label: "Melt Flow Index", value: "2-10 g/10min" },
-      { label: "Density", value: "1.14-1.26 g/cm\u00b3" },
-      { label: "Processing Temperature", value: "140-180\u00b0C" },
+      { label: "Density", value: "1.14-1.26 g/cm³" },
+      { label: "Processing Temperature", value: "140-180°C" },
       { label: "Form", value: "Cylindrical granules, 3-4mm" },
-      { label: "Biodegradability", value: "\u226590% in 180 days" },
+      { label: "Biodegradability", value: "≥90% in 180 days" },
       { label: "Shelf Life", value: "12 months in proper storage" },
     ],
-    image: "/products/masterbatch-pellets.jpg",
+    en: {
+      name: "PBAT Biodegradable Masterbatch",
+      categoryLabel: "Biodegradable Solutions",
+      shortDescription: "Fully biodegradable masterbatch based on PBAT resin, compliant with EN 13432 and OK Compost standards.",
+      description: "Our PBAT Biodegradable Masterbatch is a single-component, fully biodegradable solution based on premium PBAT resin. It is designed for manufacturers who need a straightforward, drop-in replacement for conventional polyethylene in film and packaging applications. Certified compliant with EN 13432 and OK Compost standards, this masterbatch delivers reliable biodegradability without sacrificing processing ease or end-product quality.",
+      applications: ["Compostable bags", "Food service packaging", "Disposable cutlery", "Agricultural films"],
+      features: [
+        "EN 13432 and OK Compost certified",
+        "Single-component ease of use",
+        "High biodegradability (≥90% in 180 days)",
+        "Excellent clarity and surface finish",
+        "Good elongation and tear resistance",
+        "Compatible with standard film extrusion lines",
+      ],
+    },
+    zh: {
+      name: "PBAT生物降解母粒",
+      categoryLabel: "可生物降解系列",
+      shortDescription: "基于PBAT树脂的全生物降解母粒，符合EN 13432和OK Compost标准。",
+      description: "我们的PBAT生物降解母粒是基于优质PBAT树脂的单组分全生物降解解决方案。它专为需要在薄膜和包装应用中简单直接替代传统聚乙烯的制造商设计。该产品获得EN 13432和OK Compost标准认证，在不牺牲加工便利性或最终产品质量的情况下提供可靠的生物降解性。",
+      applications: ["可堆肥袋", "食品服务包装", "一次性餐具", "农用薄膜"],
+      features: [
+        "EN 13432和OK Compost认证",
+        "单组分，使用简便",
+        "高生物降解性（180天内≥90%）",
+        "优异的透明度和表面光洁度",
+        "良好的延伸性和抗撕裂性",
+        "兼容标准薄膜挤出生产线",
+      ],
+    },
   },
   {
     slug: "pla-compound-masterbatch",
-    name: "PLA Compound Masterbatch",
-    nameCn: "PLA\u590D\u5408\u6BCD\u7C92",
     category: "biodegradable",
-    categoryLabel: "Biodegradable Solutions",
-    shortDescription:
-      "PLA-based compound masterbatch combining biodegradability with improved mechanical properties and heat resistance.",
-    description:
-      "Our PLA Compound Masterbatch leverages polylactic acid derived from renewable resources to create high-performance biodegradable products. With optimized formulations that improve upon PLA's inherent brittleness and limited heat resistance, this masterbatch opens up new application possibilities for bio-based plastics. Available in both standard and heat-resistant grades to meet diverse processing and end-use requirements.",
-    applications: [
-      "Rigid packaging",
-      "Disposable cups and containers",
-      "3D printing filaments",
-      "Textile fibers",
-    ],
-    features: [
-      "Bio-based content from renewable corn starch",
-      "Improved impact strength over neat PLA",
-      "Heat-resistant grades available (up to 120\u00b0C)",
-      "Suitable for injection molding, thermoforming, and fiber spinning",
-      "Good surface gloss and dimensional stability",
-      "Industrial compostable per EN 13432",
-    ],
+    image: "/products/masterbatch-pellets.jpg",
     specifications: [
       { label: "Carrier", value: "PLA" },
       { label: "Addition", value: "20-100%" },
       { label: "Melt Flow Index", value: "5-30 g/10min" },
-      { label: "Density", value: "1.24-1.28 g/cm\u00b3" },
-      { label: "Heat Resistance", value: "60-120\u00b0C (modified grade)" },
-      { label: "Processing Temperature", value: "170-210\u00b0C" },
+      { label: "Density", value: "1.24-1.30 g/cm³" },
+      { label: "Processing Temperature", value: "170-210°C" },
+      { label: "Heat Resistance", value: "60-120°C (modified)" },
       { label: "Form", value: "Cylindrical granules, 3-4mm" },
-      { label: "Moisture Content", value: "\u22640.05%" },
+      { label: "Biodegradability", value: "≥90% in 180 days" },
     ],
-    image: "/products/masterbatch-pellets.jpg",
+    en: {
+      name: "PLA Compound Masterbatch",
+      categoryLabel: "Biodegradable Solutions",
+      shortDescription: "PLA-based compound masterbatch combining biodegradability with improved mechanical properties and heat resistance.",
+      description: "Our PLA Compound Masterbatch combines the environmental benefits of polylactic acid (PLA) with enhanced mechanical performance and heat resistance. Through advanced compounding technology, we address PLA's inherent limitations in brittleness and low heat deflection temperature, making it suitable for a wider range of applications. This product is ideal for manufacturers seeking sustainable alternatives without compromising on performance.",
+      applications: ["Rigid packaging", "Disposable cups and containers", "3D printing filaments", "Textile fibers"],
+      features: [
+        "Improved impact resistance vs. pure PLA",
+        "Enhanced heat deflection temperature",
+        "Maintains full biodegradability",
+        "Good processability on standard equipment",
+        "Excellent surface finish and clarity",
+        "Customizable formulations for specific needs",
+      ],
+    },
+    zh: {
+      name: "PLA复合母粒",
+      categoryLabel: "可生物降解系列",
+      shortDescription: "基于PLA的复合母粒，将生物降解性与改进的机械性能和耐热性相结合。",
+      description: "我们的PLA复合母粒将聚乳酸（PLA）的环保优势与增强的机械性能和耐热性相结合。通过先进的复合技术，我们解决了PLA固有的脆性和低热变形温度限制，使其适用于更广泛的应用。该产品非常适合寻求可持续替代品而不牺牲性能的制造商。",
+      applications: ["硬质包装", "一次性杯子和容器", "3D打印耗材", "纺织纤维"],
+      features: [
+        "相比纯PLA，抗冲击性提高",
+        "热变形温度提高",
+        "保持完全生物降解性",
+        "在标准设备上良好的加工性",
+        "优异的表面光洁度和透明度",
+        "可定制配方满足特定需求",
+      ],
+    },
   },
-
-  // ─── Performance Enhancement ──────────────────────────────────────
+  // ─── Performance Enhancement ───────────────────────────────────────
   {
     slug: "ppa-masterbatch",
-    name: "PPA Masterbatch",
-    nameCn: "PPA\u52A0\u5DE5\u52A9\u5242\u6BCD\u7C92",
     category: "performance",
-    categoryLabel: "Performance Enhancement",
-    shortDescription:
-      "Polymeric Processing Aid masterbatch to eliminate melt fracture, improve surface gloss, and reduce die build-up in film extrusion.",
-    description:
-      "Our PPA (Polymeric Processing Aid) Masterbatch is formulated with advanced fluoropolymer technology to eliminate melt fracture and improve surface quality in film extrusion. It migrates to the die surface during processing to create a lubricating layer, reducing die buildup and enabling higher throughput. The result is smoother film surfaces, higher line speeds, and extended production runs without die cleaning.",
-    applications: [
-      "Blown film",
-      "Cast film",
-      "Pipe extrusion",
-      "Wire & cable",
-    ],
-    features: [
-      "Eliminates sharkskin and melt fracture defects",
-      "Reduces die buildup for longer run times",
-      "Enables 15-30% throughput increase",
-      "Improved film surface gloss and clarity",
-      "Very low addition ratio for cost efficiency",
-      "Compatible with all polyolefin resins",
-    ],
+    image: "/products/masterbatch-pellets.jpg",
     specifications: [
-      { label: "Carrier", value: "LLDPE / LDPE" },
+      { label: "Carrier", value: "LLDPE/LDPE" },
       { label: "Addition", value: "0.05-0.2%" },
       { label: "Melt Flow Index", value: "20-40 g/10min" },
-      { label: "Density", value: "0.90-0.95 g/cm\u00b3" },
-      { label: "Active Content", value: "25\u00b12%" },
-      { label: "Processing Temperature", value: "160-280\u00b0C" },
-      { label: "Form", value: "Round pellets, 2-3mm" },
-      { label: "Moisture Content", value: "\u22640.1%" },
+      { label: "Density", value: "0.90-0.95 g/cm³" },
+      { label: "Processing Temperature", value: "180-280°C" },
+      { label: "Form", value: "Cylindrical granules, 3-4mm" },
+      { label: "Appearance", value: "White/transparent granules" },
+      { label: "Shelf Life", value: "24 months" },
     ],
-    image: "/products/masterbatch-pellets.jpg",
+    en: {
+      name: "PPA Masterbatch",
+      categoryLabel: "Performance Enhancement",
+      shortDescription: "Polymeric Processing Aid masterbatch to eliminate melt fracture, improve surface gloss, and reduce die build-up.",
+      description: "Our PPA (Polymeric Processing Aid) Masterbatch is engineered to resolve common processing challenges in polyolefin extrusion. It effectively eliminates melt fracture phenomena such as sharkskin and gross melt fracture, while significantly improving surface gloss and reducing die build-up. The ultra-low addition rate makes it highly cost-effective for high-volume production.",
+      applications: ["Blown film", "Cast film", "Pipe extrusion", "Wire & cable"],
+      features: [
+        "Eliminates sharkskin and melt fracture",
+        "Improves surface gloss and clarity",
+        "Reduces die build-up significantly",
+        "Ultra-low addition rate (0.05-0.2%)",
+        "Compatible with PE, PP, and blends",
+        "No impact on final product properties",
+      ],
+    },
+    zh: {
+      name: "PPA加工助剂母粒",
+      categoryLabel: "功能增强系列",
+      shortDescription: "聚合物加工助剂母粒，消除熔体破裂，提高表面光泽，减少模头积料。",
+      description: "我们的PPA（聚合物加工助剂）母粒专为解决聚烯烃挤出中的常见加工问题而设计。它有效消除熔体破裂现象，如鲨鱼皮和严重熔体破裂，同时显著提高表面光泽并减少模头积料。超低添加量使其在大产量生产中具有极高的成本效益。",
+      applications: ["吹膜", "流延膜", "管材挤出", "电线电缆"],
+      features: [
+        "消除鲨鱼皮和熔体破裂",
+        "提高表面光泽和透明度",
+        "显著减少模头积料",
+        "超低添加量（0.05-0.2%）",
+        "兼容PE、PP及其共混物",
+        "不影响最终产品性能",
+      ],
+    },
   },
   {
     slug: "barium-sulfate-masterbatch",
-    name: "Barium Sulfate Masterbatch",
-    nameCn: "\u786B\u9178\u94A1\u6BCD\u7C92",
     category: "performance",
-    categoryLabel: "Performance Enhancement",
-    shortDescription:
-      "High-density barium sulfate filler masterbatch for weight increase, radiation shielding, and improved surface finish.",
-    description:
-      "Our Barium Sulfate Masterbatch delivers exceptional density and whiteness for applications requiring weighting, X-ray shielding, or enhanced surface properties. Using high-purity barium sulfate with optimized particle size distribution, this masterbatch ensures uniform dispersion and consistent performance. It is widely used in medical, automotive, and industrial applications where high specific gravity and excellent surface finish are critical.",
-    applications: [
-      "Medical X-ray shielding",
-      "Automotive parts",
-      "Home appliance shells",
-      "High-end packaging",
-    ],
-    features: [
-      "High density for effective weighting",
-      "Excellent radiation shielding properties",
-      "Superior whiteness and brightness",
-      "Smooth surface finish on molded parts",
-      "Good dispersion with minimal filter blockage",
-      "Chemical inertness and thermal stability",
-    ],
-    specifications: [
-      { label: "Carrier", value: "PP / PE / PS" },
-      { label: "BaSO\u2084 Content", value: "50-80%" },
-      { label: "Melt Flow Index", value: "2-15 g/10min" },
-      { label: "Density", value: "1.80-3.00 g/cm\u00b3" },
-      { label: "Whiteness", value: "\u226595%" },
-      { label: "Particle Size (D50)", value: "1.0-1.5 \u03bcm" },
-      { label: "Form", value: "Cylindrical granules, 3-4mm" },
-      { label: "Processing Temperature", value: "180-280\u00b0C" },
-    ],
     image: "/products/masterbatch-pellets.jpg",
+    specifications: [
+      { label: "Carrier", value: "PP/PE/PS" },
+      { label: "BaSO₄ Content", value: "50-80%" },
+      { label: "Melt Flow Index", value: "2-15 g/10min" },
+      { label: "Density", value: "1.80-3.00 g/cm³" },
+      { label: "Processing Temperature", value: "160-260°C" },
+      { label: "Form", value: "Cylindrical granules, 3-4mm" },
+      { label: "Particle Size", value: "D50: 1-5 μm" },
+      { label: "Whiteness", value: "≥95%" },
+    ],
+    en: {
+      name: "Barium Sulfate Masterbatch",
+      categoryLabel: "Performance Enhancement",
+      shortDescription: "High-density barium sulfate filler masterbatch for weight increase, radiation shielding, and improved surface finish.",
+      description: "Our Barium Sulfate Masterbatch utilizes premium precipitated barium sulfate with high purity and fine particle size. It is designed for applications requiring increased product weight, radiation shielding properties, or enhanced surface finish. The high loading capacity and excellent dispersion ensure consistent performance while maintaining processability.",
+      applications: ["Medical X-ray shielding", "Automotive parts", "Appliance shells", "High-end packaging"],
+      features: [
+        "High BaSO₄ loading (up to 80%)",
+        "Excellent radiation shielding properties",
+        "Increases product weight and density",
+        "Improves surface finish and rigidity",
+        "Fine particle size for smooth surface",
+        "Good compatibility with multiple resins",
+      ],
+    },
+    zh: {
+      name: "硫酸钡母粒",
+      categoryLabel: "功能增强系列",
+      shortDescription: "高密度硫酸钡填充母粒，用于增重、辐射屏蔽和改善表面光洁度。",
+      description: "我们的硫酸钡母粒采用优质沉淀硫酸钡，纯度高、粒径细。它专为需要增加产品重量、辐射屏蔽性能或增强表面光洁度的应用而设计。高填充量和优异的分散性确保性能一致，同时保持加工性。",
+      applications: ["医用X射线屏蔽", "汽车部件", "家电外壳", "高端包装"],
+      features: [
+        "高硫酸钡填充量（高达80%）",
+        "优异的辐射屏蔽性能",
+        "增加产品重量和密度",
+        "改善表面光洁度和刚性",
+        "细粒径，表面光滑",
+        "与多种树脂良好兼容",
+      ],
+    },
   },
   {
     slug: "talc-masterbatch",
-    name: "Talc Masterbatch",
-    nameCn: "\u6ED1\u77F3\u7C89\u6BCD\u7C92",
     category: "performance",
-    categoryLabel: "Performance Enhancement",
-    shortDescription:
-      "Premium talc filler masterbatch for stiffness enhancement, dimensional stability improvement, and cost reduction in polyolefin applications.",
-    description:
-      "Our Talc Masterbatch is formulated with high-purity, ultra-fine talc to provide significant reinforcement and cost optimization in polyolefin applications. The carefully controlled particle size and surface treatment ensure excellent dispersion and strong interfacial bonding with the polymer matrix. This masterbatch is ideal for injection molding and extrusion applications where rigidity, heat resistance, and surface quality are paramount.",
-    applications: [
-      "Injection molding",
-      "Blow molding",
-      "Sheet extrusion",
-      "Fiber & tape",
-    ],
-    features: [
-      "Significant stiffness improvement (up to 40%)",
-      "Enhanced heat deflection temperature",
-      "Improved dimensional stability",
-      "Excellent surface smoothness",
-      "Cost-effective raw material reduction",
-      "Good impact-stiffness balance",
-    ],
+    image: "/products/masterbatch-pellets.jpg",
     specifications: [
-      { label: "Carrier", value: "PP / PE" },
+      { label: "Carrier", value: "PP/PE" },
       { label: "Addition", value: "10-40%" },
       { label: "Melt Flow Index", value: "3-20 g/10min" },
-      { label: "Density", value: "1.40-2.00 g/cm\u00b3" },
-      { label: "Whiteness", value: "\u226590%" },
-      { label: "Particle Size (D50)", value: "2.0-4.0 \u03bcm" },
+      { label: "Density", value: "1.40-2.00 g/cm³" },
+      { label: "Processing Temperature", value: "160-260°C" },
       { label: "Form", value: "Cylindrical granules, 3-4mm" },
-      { label: "Talc Content", value: "70-85%" },
+      { label: "Talc Content", value: "40-70%" },
+      { label: "Particle Size", value: "D50: 2-10 μm" },
     ],
-    image: "/products/masterbatch-pellets.jpg",
+    en: {
+      name: "Talc Masterbatch",
+      categoryLabel: "Performance Enhancement",
+      shortDescription: "Premium talc filler masterbatch for stiffness enhancement, dimensional stability improvement, and cost reduction.",
+      description: "Our Talc Masterbatch incorporates high-quality talc powder with controlled particle size distribution for optimal reinforcement in polyolefin applications. It significantly improves stiffness, dimensional stability, and heat resistance while reducing material costs. The excellent dispersion and compatibility ensure smooth processing and consistent product quality.",
+      applications: ["Injection molding", "Blow molding", "Sheet extrusion", "Fiber & tape"],
+      features: [
+        "Significantly improves stiffness and rigidity",
+        "Enhances dimensional stability",
+        "Increases heat deflection temperature",
+        "Reduces material costs effectively",
+        "Excellent dispersion and compatibility",
+        "Maintains good impact resistance",
+      ],
+    },
+    zh: {
+      name: "滑石粉母粒",
+      categoryLabel: "功能增强系列",
+      shortDescription: "优质滑石粉填充母粒，用于提高刚性、改善尺寸稳定性和降低成本。",
+      description: "我们的滑石粉母粒采用高质量滑石粉，粒径分布可控，为聚烯烃应用提供最佳增强效果。它显著提高刚性、尺寸稳定性和耐热性，同时降低材料成本。优异的分散性和兼容性确保加工顺畅和产品质量一致。",
+      applications: ["注塑", "吹塑", "片材挤出", "纤维和编织带"],
+      features: [
+        "显著提高刚性和硬度",
+        "增强尺寸稳定性",
+        "提高热变形温度",
+        "有效降低材料成本",
+        "优异的分散性和兼容性",
+        "保持良好的抗冲击性",
+      ],
+    },
   },
   {
     slug: "defoamer-masterbatch",
-    name: "Defoamer Masterbatch",
-    nameCn: "\u6D88\u6CE1\u6BCD\u7C92",
     category: "performance",
-    categoryLabel: "Performance Enhancement",
-    shortDescription:
-      "Moisture-absorbing masterbatch that eliminates bubbles and surface defects caused by moisture in recycled or hygroscopic plastics.",
-    description:
-      "Our Defoamer Masterbatch is specifically designed to eliminate foam and gas bubbles caused by moisture, volatile residues, or trapped air during plastic processing. It works by absorbing moisture and breaking down bubble walls, allowing gases to escape before they cause surface defects. This masterbatch is essential for recycling operations, filled compound production, and any process where moisture or volatiles create quality issues.",
-    applications: [
-      "Recycled PP/PE film",
-      "Blown film",
-      "Injection molding",
-      "Pipe extrusion",
-    ],
-    features: [
-      "Eliminates bubbles, pinholes, and surface voids",
-      "Improves surface quality and mechanical properties",
-      "Reduces or eliminates pre-drying requirements",
-      "Compatible with PP, PE, and other polyolefins",
-      "No effect on optical clarity at recommended doses",
-      "Easy to handle and dose with standard equipment",
-    ],
-    specifications: [
-      { label: "Carrier", value: "PP / PE" },
-      { label: "Addition", value: "1-3%" },
-      { label: "Moisture Absorption", value: "\u22653%" },
-      { label: "Melt Flow Index", value: "2-15 g/10min" },
-      { label: "Density", value: "1.40-1.80 g/cm\u00b3" },
-      { label: "Processing Temperature", value: "150-280\u00b0C" },
-      { label: "Form", value: "Cylindrical granules, 3-4mm" },
-      { label: "Active Component", value: "Calcium oxide blend" },
-    ],
     image: "/products/masterbatch-pellets.jpg",
+    specifications: [
+      { label: "Carrier", value: "PP/PE" },
+      { label: "Addition", value: "1-3%" },
+      { label: "Moisture Absorption", value: "≥3%" },
+      { label: "Melt Flow Index", value: "2-15 g/10min" },
+      { label: "Processing Temperature", value: "160-260°C" },
+      { label: "Form", value: "Cylindrical granules, 3-4mm" },
+      { label: "Appearance", value: "White/gray granules" },
+      { label: "Shelf Life", value: "6 months (sealed)" },
+    ],
+    en: {
+      name: "Defoamer Masterbatch",
+      categoryLabel: "Performance Enhancement",
+      shortDescription: "Moisture-absorbing masterbatch that eliminates bubbles and surface defects caused by moisture in recycled or hygroscopic plastics.",
+      description: "Our Defoamer Masterbatch is specially formulated to absorb moisture and eliminate gas-related defects in plastic processing. It is essential for processing recycled materials or hygroscopic resins that tend to absorb moisture from the environment. The masterbatch effectively prevents bubbles, voids, and surface imperfections, ensuring high-quality end products without the need for pre-drying.",
+      applications: ["Recycled PP/PE film", "Blown film", "Injection molding", "Pipe extrusion"],
+      features: [
+        "High moisture absorption capacity",
+        "Eliminates bubbles and surface defects",
+        "No pre-drying required for recycled materials",
+        "Improves product appearance and quality",
+        "Easy to use with standard equipment",
+        "Cost-effective solution for recyclers",
+      ],
+    },
+    zh: {
+      name: "消泡母粒",
+      categoryLabel: "功能增强系列",
+      shortDescription: "吸湿母粒，消除回收或吸湿性塑料中水分引起的气泡和表面缺陷。",
+      description: "我们的消泡母粒专为吸收水分和消除塑料加工中的气体相关缺陷而配制。它对于加工容易从环境中吸收水分的回收材料或吸湿性树脂至关重要。该母粒有效防止气泡、空隙和表面缺陷，确保高质量最终产品，无需预干燥。",
+      applications: ["回收PP/PE薄膜", "吹膜", "注塑", "管材挤出"],
+      features: [
+        "高吸湿能力",
+        "消除气泡和表面缺陷",
+        "回收材料无需预干燥",
+        "改善产品外观和质量",
+        "在标准设备上易于使用",
+        "回收者的经济高效解决方案",
+      ],
+    },
   },
   {
     slug: "calcium-carbonate-masterbatch",
-    name: "Calcium Carbonate Masterbatch",
-    nameCn: "\u78B3\u9178\u9499\u6BCD\u7C92",
     category: "performance",
-    categoryLabel: "Performance Enhancement",
-    shortDescription:
-      "High-loading calcium carbonate filler masterbatch for significant cost reduction while maintaining good mechanical properties and surface quality.",
-    description:
-      "Our Calcium Carbonate Masterbatch utilizes premium natural or precipitated calcium carbonate with advanced surface treatment technology to achieve optimal compatibility with polyolefin matrices. It provides substantial cost savings through raw material replacement while maintaining acceptable mechanical properties and processing characteristics. Available in various loading levels to match specific application requirements.",
-    applications: [
-      "Blown film",
-      "Injection molding",
-      "Pipe & profile extrusion",
-      "Woven bags",
-    ],
-    features: [
-      "Up to 40% cost reduction in raw materials",
-      "Excellent dispersion with minimal filter pressure",
-      "Maintains tensile strength at high loading",
-      "Smooth surface finish on final products",
-      "Consistent pellet quality for automated dosing",
-      "Available in PE and PP carrier systems",
-    ],
-    specifications: [
-      { label: "Carrier", value: "PP / PE" },
-      { label: "CaCO\u2083 Content", value: "60-85%" },
-      { label: "Melt Flow Index", value: "2-20 g/10min" },
-      { label: "Density", value: "1.60-2.20 g/cm\u00b3" },
-      { label: "Whiteness", value: "\u226592%" },
-      { label: "Particle Size (D50)", value: "1.0-3.0 \u03bcm" },
-      { label: "Form", value: "Cylindrical granules, 3-4mm" },
-      { label: "Processing Temperature", value: "160-260\u00b0C" },
-    ],
     image: "/products/masterbatch-pellets.jpg",
+    specifications: [
+      { label: "Carrier", value: "PP/PE" },
+      { label: "CaCO₃ Content", value: "60-85%" },
+      { label: "Melt Flow Index", value: "2-20 g/10min" },
+      { label: "Density", value: "1.60-2.20 g/cm³" },
+      { label: "Processing Temperature", value: "160-260°C" },
+      { label: "Form", value: "Cylindrical granules, 3-4mm" },
+      { label: "Particle Size", value: "D50: 1-5 μm" },
+      { label: "Whiteness", value: "≥90%" },
+    ],
+    en: {
+      name: "Calcium Carbonate Masterbatch",
+      categoryLabel: "Performance Enhancement",
+      shortDescription: "High-loading calcium carbonate filler masterbatch for significant cost reduction while maintaining good mechanical properties.",
+      description: "Our Calcium Carbonate Masterbatch is a high-performance filler solution designed for maximum cost efficiency without compromising product quality. Using premium ground calcium carbonate with optimized particle size and surface treatment, it achieves high loading levels while maintaining excellent dispersion and mechanical properties. This product is widely used across packaging, construction, and consumer goods industries.",
+      applications: ["Blown film", "Injection molding", "Pipe & profile extrusion", "Woven bags"],
+      features: [
+        "High CaCO₃ loading (up to 85%)",
+        "Significant cost reduction",
+        "Maintains good mechanical properties",
+        "Excellent dispersion and processability",
+        "Improves dimensional stability",
+        "Compatible with multiple processing methods",
+      ],
+    },
+    zh: {
+      name: "碳酸钙母粒",
+      categoryLabel: "功能增强系列",
+      shortDescription: "高填充碳酸钙填充母粒，在保持良好机械性能的同时显著降低成本。",
+      description: "我们的碳酸钙母粒是一种高性能填充解决方案，旨在实现最大成本效率而不牺牲产品质量。采用优质研磨碳酸钙，优化粒径和表面处理，在高填充量下仍保持优异的分散性和机械性能。该产品广泛应用于包装、建筑和消费品行业。",
+      applications: ["吹膜", "注塑", "管材和型材挤出", "编织袋"],
+      features: [
+        "高碳酸钙填充量（高达85%）",
+        "显著降低成本",
+        "保持良好的机械性能",
+        "优异的分散性和加工性",
+        "提高尺寸稳定性",
+        "兼容多种加工方法",
+      ],
+    },
   },
 ];
-
-export function getProductBySlug(slug: string): Product | undefined {
-  return products.find((p) => p.slug === slug);
-}
-
-export function getProductsByCategory(
-  category: "biodegradable" | "performance"
-): Product[] {
-  return products.filter((p) => p.category === category);
-}
-
-export function getAllSlugs(): string[] {
-  return products.map((p) => p.slug);
-}

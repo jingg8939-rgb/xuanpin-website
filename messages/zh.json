@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "home": "首页",
+    "products": "产品中心",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "getQuote": "获取报价",
+    "menu": "菜单",
+    "closeMenu": "关闭菜单"
+  },
+  "home": {
+    "hero": {
+      "title": "全球母粒解决方案供应商",
+      "subtitle": "工厂直销 · 研发定制 · 全球出口",
+      "exploreProducts": "浏览产品",
+      "contactUs": "联系我们"
+    },
+    "advantages": {
+      "title": "为什么选择轩品",
+      "factory": {
+        "title": "工厂直销",
+        "desc": "直接从生产基地发货，确保价格竞争力和稳定的质量控制。"
+      },
+      "rnd": {
+        "title": "研发定制",
+        "desc": "专业研发团队提供定制化配方，满足您的特定应用需求。"
+      },
+      "export": {
+        "title": "全球出口",
+        "desc": "服务30多个国家客户，拥有可靠的物流和国际贸易经验。"
+      },
+      "quality": {
+        "title": "质量保证",
+        "desc": "ISO认证质量管理体系，每个生产阶段严格检测。"
+      }
+    },
+    "products": {
+      "title": "我们的产品",
+      "subtitle": "为多样化工业应用提供全面的母粒解决方案",
+      "biodegradable": {
+        "title": "可生物降解系列",
+        "desc": "用于可持续包装和农业应用的环保母粒产品"
+      },
+      "performance": {
+        "title": "功能增强系列",
+        "desc": "提升材料性能并降低成本的功能性母粒产品"
+      },
+      "viewDetails": "查看详情",
+      "viewAll": "查看全部产品"
+    },
+    "cta": {
+      "title": "准备好开始您的项目了吗？",
+      "subtitle": "联系我们的团队，获取定制化母粒解决方案和优惠报价",
+      "contactUs": "联系我们",
+      "requestQuote": "索取报价"
+    }
+  },
+  "products": {
+    "title": "产品中心",
+    "subtitle": "探索我们全面的母粒解决方案",
+    "categories": {
+      "all": "全部产品",
+      "biodegradable": "可生物降解系列",
+      "performance": "功能增强系列"
+    },
+    "learnMore": "了解更多",
+    "applications": "应用领域",
+    "backToProducts": "返回产品列表"
+  },
+  "productDetail": {
+    "description": "产品描述",
+    "applications": "应用领域",
+    "features": "核心特点与优势",
+    "specifications": "技术参数",
+    "relatedProducts": "相关产品",
+    "requestQuote": "索取报价",
+    "parameter": "参数",
+    "value": "数值"
+  },
+  "about": {
+    "title": "关于轩品",
+    "subtitle": "领先的高性能母粒解决方案制造商",
+    "intro": {
+      "title": "公司简介",
+      "content": "江西轩品新材料有限公司是一家专业从事各类母粒产品研发、生产和销售的现代化企业。凭借先进的生产设备和专业的研发团队，我们为全球化工业提供全面的解决方案。"
+    },
+    "mission": {
+      "title": "使命与愿景",
+      "mission": "提供创新的母粒解决方案，提升产品性能，同时推动可持续制造实践。",
+      "vision": "成为全球母粒技术领导者，以质量、创新和卓越客户服务著称。"
+    },
+    "manufacturing": {
+      "title": "制造与质量",
+      "facility": {
+        "title": "先进设施",
+        "desc": "年产能50,000+吨，拥有8+条生产线"
+      },
+      "rd": {
+        "title": "研发中心",
+        "desc": "专业研发团队开发前沿配方"
+      },
+      "quality": {
+        "title": "质量控制",
+        "desc": "ISO认证质量管理，严格检测"
+      },
+      "global": {
+        "title": "全球覆盖",
+        "desc": "出口30+国家，物流可靠"
+      }
+    },
+    "stats": {
+      "capacity": "年产能",
+      "countries": "服务国家",
+      "team": "团队成员",
+      "lines": "生产线"
+    },
+    "milestones": {
+      "title": "发展历程",
+      "founded": {
+        "year": "2015",
+        "title": "公司成立",
+        "desc": "在江西成立，初期专注于碳酸钙母粒生产"
+      },
+      "expansion": {
+        "year": "2017",
+        "title": "产品线扩展",
+        "desc": "新增PPA、滑石粉和消泡母粒生产线"
+      },
+      "export": {
+        "year": "2019",
+        "title": "出口业务启动",
+        "desc": "开始国际业务，服务东南亚市场"
+      },
+      "innovation": {
+        "year": "2021",
+        "title": "可降解解决方案",
+        "desc": "推出PBAT和PLA复合母粒，用于可持续包装"
+      },
+      "growth": {
+        "year": "2023",
+        "title": "全球扩张",
+        "desc": "拓展欧美市场，业务覆盖30+国家"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "与我们的团队联系，咨询和获取报价",
+    "info": {
+      "title": "联系信息",
+      "address": "地址",
+      "addressValue": "中国江西省 江西轩品新材料有限公司",
+      "phone": "电话",
+      "email": "邮箱",
+      "hours": "营业时间",
+      "hoursValue": "周一至周五：上午9:00 - 下午6:00（GMT+8）"
+    },
+    "form": {
+      "title": "给我们留言",
+      "name": "您的姓名",
+      "email": "电子邮箱",
+      "company": "公司名称",
+      "product": "感兴趣的产品",
+      "selectProduct": "选择产品",
+      "message": "留言内容",
+      "submit": "提交询盘",
+      "submitting": "提交中...",
+      "success": "感谢您的留言！我们将尽快与您联系。",
+      "error": "提交失败，请重试。"
+    },
+    "map": {
+      "title": "我们的位置"
+    }
+  },
+  "footer": {
+    "about": "高性能母粒解决方案专业制造商，以质量和创新服务全球化工业。",
+    "quickLinks": "快速链接",
+    "products": "产品中心",
+    "biodegradable": "可生物降解系列",
+    "performance": "功能增强系列",
+    "contact": "联系方式",
+    "rights": "版权所有。",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  }
+}
