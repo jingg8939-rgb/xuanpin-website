@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import type { Product, LocalizedContent } from "@/data/products";
@@ -44,21 +45,32 @@ export default function ProductDetailClient({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Image Gallery */}
           <div>
-            <div className="aspect-square bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-gray-400">Product Image {activeImage + 1}</span>
+            <div className="aspect-square bg-white rounded-lg mb-4 border border-gray-100 flex items-center justify-center overflow-hidden">
+              <Image
+                src={images[activeImage]}
+                alt={`${product.name} - Image ${activeImage + 1}`}
+                fill
+                className="object-contain"
+                priority={activeImage === 0}
+              />
             </div>
             <div className="grid grid-cols-4 gap-2">
               {images.map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => setActiveImage(idx)}
-                  className={`aspect-square bg-gray-200 rounded border-2 transition-colors ${
+                  className={`aspect-square bg-white rounded border-2 transition-colors overflow-hidden ${
                     activeImage === idx
                       ? "border-[#C8102E]"
-                      : "border-transparent hover:border-gray-300"
+                      : "border-gray-200 hover:border-gray-300"
                   }`}
                 >
-                  <span className="text-xs text-gray-400">{idx + 1}</span>
+                  <Image
+                    src={img}
+                    alt={`${product.name} thumbnail ${idx + 1}`}
+                    fill
+                    className="object-contain"
+                  />
                 </button>
               ))}
             </div>
