@@ -354,7 +354,7 @@ export const products: Product[] = [
     },
   },
   {
-    slug: "calcium-carbonate-masterbatch",
+    slug: "caco3-masterbatch",
     category: "performance",
     image: "/products/masterbatch-pellets.jpg",
     specifications: [

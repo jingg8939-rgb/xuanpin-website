@@ -38,7 +38,7 @@ export default function ProductDetailClient({
 
   const relatedProducts = [
     { slug: "talc-masterbatch", name: "Talc Masterbatch" },
-    { slug: "calcium-carbonate-masterbatch", name: "Calcium Carbonate Masterbatch" },
+    { slug: "caco3-masterbatch", name: "Calcium Carbonate Masterbatch" },
     { slug: "barium-sulfate-masterbatch", name: "Barium Sulfate Masterbatch" },
   ];
 
@@ -154,7 +154,7 @@ export default function ProductDetailClient({
         </section>
 
         {/* Calcium Carbonate Specific Sections */}
-        {product.slug === "calcium-carbonate-masterbatch" && (
+        {product.slug === "caco3-masterbatch" && (
           <>
             {/* Product Types */}
             <section className="mb-12">
