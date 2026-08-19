@@ -8,10 +8,23 @@ import type { Product, LocalizedContent } from "@/data/products";
 
 type ProductWithContent = Product & LocalizedContent;
 
+const SPEC_LABEL_MAP: Record<string, Record<string, string>> = {
+  "Carrier": { en: "Carrier", zh: "载体" },
+  "CaCO₃ Content": { en: "CaCO₃ Content", zh: "碳酸钙含量" },
+  "Melt Flow Index": { en: "Melt Flow Index", zh: "熔融指数" },
+  "Density": { en: "Density", zh: "密度" },
+  "Processing Temperature": { en: "Processing Temperature", zh: "加工温度" },
+  "Form": { en: "Form", zh: "形态" },
+  "Particle Size": { en: "Particle Size", zh: "粒径" },
+  "Whiteness": { en: "Whiteness", zh: "白度" },
+};
+
 export default function ProductDetailClient({
   product,
+  locale,
 }: {
   product: ProductWithContent;
+  locale: string;
 }) {
   const t = useTranslations("productDetail");
   const [activeImage, setActiveImage] = useState(0);
@@ -271,14 +284,14 @@ export default function ProductDetailClient({
                 {/* Premium Bag */}
                 <div className="relative p-8 bg-gradient-to-br from-white to-blue-50 border-2 border-[#C8102E] rounded-lg shadow-lg">
                   <div className="absolute top-4 right-4 bg-[#C8102E] text-white text-xs font-bold px-3 py-1 rounded-full">
-                    PREMIUM
+                    {t("bagComparison.premium.badge")}
                   </div>
                   <div className="mb-6">
                     <div className="w-full h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center mb-4 border border-blue-200">
                       <div className="text-center">
                         <div className="text-4xl mb-2">✨</div>
                         <div className="text-blue-600 text-sm font-medium">
-                          Superior Quality
+                          {t("bagComparison.premium.quality")}
                         </div>
                       </div>
                     </div>
@@ -302,14 +315,14 @@ export default function ProductDetailClient({
                 {/* Standard Bag */}
                 <div className="relative p-8 bg-gray-100 border-2 border-gray-300 rounded-lg">
                   <div className="absolute top-4 right-4 bg-gray-400 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    STANDARD
+                    {t("bagComparison.standard.badge")}
                   </div>
                   <div className="mb-6">
                     <div className="w-full h-32 bg-gray-200 rounded-lg flex items-center justify-center mb-4 border border-gray-300">
                       <div className="text-center">
                         <div className="text-4xl mb-2 opacity-50"></div>
                         <div className="text-gray-500 text-sm font-medium">
-                          Standard Quality
+                          {t("bagComparison.standard.quality")}
                         </div>
                       </div>
                     </div>
@@ -353,16 +366,19 @@ export default function ProductDetailClient({
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                {product.specifications.map((spec, idx) => (
-                  <tr key={idx} className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-sm text-gray-600">
-                      {spec.label}
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-900 font-medium">
-                      {spec.value}
-                    </td>
-                  </tr>
-                ))}
+                {product.specifications.map((spec, idx) => {
+                  const localizedLabel = SPEC_LABEL_MAP[spec.label]?.[locale] || spec.label;
+                  return (
+                    <tr key={idx} className="hover:bg-gray-50">
+                      <td className="px-6 py-4 text-sm text-gray-600">
+                        {localizedLabel}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-900 font-medium">
+                        {spec.value}
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

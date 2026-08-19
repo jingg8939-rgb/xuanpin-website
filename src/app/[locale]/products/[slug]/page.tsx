@@ -44,5 +44,5 @@ export default async function ProductDetailPage({
 
   const localized = getLocalizedProduct(product, locale as Locale);
 
-  return <ProductDetailClient product={localized} />;
+  return <ProductDetailClient product={localized} locale={locale} />;
 }

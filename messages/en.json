@@ -126,8 +126,13 @@
     "bagComparison": {
       "title": "Visual Quality Comparison",
       "subtitle": "See the difference our advanced masterbatch makes",
+      "premiumBag": "PREMIUM BAG",
+      "premiumLabel": "Superior Quality",
+      "standardBag": "STANDARD BAG",
+      "standardLabel": "Standard Quality",
       "premium": {
         "label": "With Nano/Modified Masterbatch",
+        "quality": "Superior Quality",
         "features": [
           "Superior transparency",
           "Smooth surface finish",
@@ -137,6 +142,7 @@
       },
       "standard": {
         "label": "Conventional Filler",
+        "quality": "Standard Quality",
         "features": [
           "Opaque appearance",
           "Rough surface",

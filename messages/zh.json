@@ -126,8 +126,13 @@
     "bagComparison": {
       "title": "视觉质量对比",
       "subtitle": "看看我们先进母粒带来的差异",
+      "premiumBag": "优质袋",
+      "premiumLabel": "卓越品质",
+      "standardBag": "标准袋",
+      "standardLabel": "标准品质",
       "premium": {
         "label": "使用纳米/改性母粒",
+        "quality": "卓越品质",
         "features": [
           "卓越的透明度",
           "光滑的表面",
@@ -137,6 +142,7 @@
       },
       "standard": {
         "label": "传统填充料",
+        "quality": "标准品质",
         "features": [
           "不透明外观",
           "粗糙表面",
