@@ -140,6 +140,201 @@ export default function ProductDetailClient({
           </div>
         </section>
 
+        {/* Calcium Carbonate Specific Sections */}
+        {product.slug === "calcium-carbonate-masterbatch" && (
+          <>
+            {/* Product Types */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold text-slate-900 mb-2">
+                {t("productTypes.title")}
+              </h2>
+              <p className="text-gray-600 mb-6">{t("productTypes.subtitle")}</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Nano CaCO3 */}
+                <div className="p-6 bg-white border-2 border-[#C8102E] rounded-lg shadow-sm">
+                  <div className="w-12 h-12 bg-[#C8102E] rounded-full flex items-center justify-center mb-4">
+                    <span className="text-white text-xl font-bold">N</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">
+                    {t("productTypes.nano.name")}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {t("productTypes.nano.desc")}
+                  </p>
+                </div>
+                {/* Surface Modified */}
+                <div className="p-6 bg-white border-2 border-[#C8102E] rounded-lg shadow-sm">
+                  <div className="w-12 h-12 bg-[#C8102E] rounded-full flex items-center justify-center mb-4">
+                    <span className="text-white text-xl font-bold">M</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">
+                    {t("productTypes.modified.name")}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {t("productTypes.modified.desc")}
+                  </p>
+                </div>
+                {/* High-Filler-Content */}
+                <div className="p-6 bg-white border-2 border-[#C8102E] rounded-lg shadow-sm">
+                  <div className="w-12 h-12 bg-[#C8102E] rounded-full flex items-center justify-center mb-4">
+                    <span className="text-white text-xl font-bold">H</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">
+                    {t("productTypes.highFiller.name")}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {t("productTypes.highFiller.desc")}
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Comparison Table */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                {t("comparisonTable.title")}
+              </h2>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-700 border-b-2 border-gray-200 bg-gray-50">
+                        {t("comparisonTable.headers.feature")}
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-500 border-b-2 border-gray-200 bg-gray-50">
+                        {t("comparisonTable.headers.conventional")}
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-bold text-[#C8102E] border-b-2 border-[#C8102E] bg-red-50">
+                        {t("comparisonTable.headers.nano")}
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="hover:bg-gray-50">
+                      <td className="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-200">
+                        {t("comparisonTable.rows.particle.label")}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-500 border-b border-gray-200">
+                        {t("comparisonTable.rows.particle.conventional")}
+                      </td>
+                      <td className="px-6 py-4 text-sm font-bold text-[#C8102E] border-b border-gray-200 bg-red-50/30">
+                        {t("comparisonTable.rows.particle.nano")}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-200">
+                        {t("comparisonTable.rows.modification.label")}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-500 border-b border-gray-200">
+                        {t("comparisonTable.rows.modification.conventional")}
+                      </td>
+                      <td className="px-6 py-4 text-sm font-bold text-[#C8102E] border-b border-gray-200 bg-red-50/30">
+                        {t("comparisonTable.rows.modification.nano")}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-200">
+                        {t("comparisonTable.rows.dispersion.label")}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-500 border-b border-gray-200">
+                        {t("comparisonTable.rows.dispersion.conventional")}
+                      </td>
+                      <td className="px-6 py-4 text-sm font-bold text-[#C8102E] border-b border-gray-200 bg-red-50/30">
+                        {t("comparisonTable.rows.dispersion.nano")}
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="px-6 py-4 text-sm font-medium text-gray-900 border-b border-gray-200">
+                        {t("comparisonTable.rows.loading.label")}
+                      </td>
+                      <td className="px-6 py-4 text-sm text-gray-500 border-b border-gray-200">
+                        {t("comparisonTable.rows.loading.conventional")}
+                      </td>
+                      <td className="px-6 py-4 text-sm font-bold text-[#C8102E] border-b border-gray-200 bg-red-50/30">
+                        {t("comparisonTable.rows.loading.nano")}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            {/* Bag Comparison */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold text-slate-900 mb-2">
+                {t("bagComparison.title")}
+              </h2>
+              <p className="text-gray-600 mb-6">
+                {t("bagComparison.subtitle")}
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Premium Bag */}
+                <div className="relative p-8 bg-gradient-to-br from-white to-blue-50 border-2 border-[#C8102E] rounded-lg shadow-lg">
+                  <div className="absolute top-4 right-4 bg-[#C8102E] text-white text-xs font-bold px-3 py-1 rounded-full">
+                    PREMIUM
+                  </div>
+                  <div className="mb-6">
+                    <div className="w-full h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center mb-4 border border-blue-200">
+                      <div className="text-center">
+                        <div className="text-4xl mb-2">✨</div>
+                        <div className="text-blue-600 text-sm font-medium">
+                          Superior Quality
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-4">
+                    {t("bagComparison.premium.label")}
+                  </h3>
+                  <ul className="space-y-2">
+                    {t.raw("bagComparison.premium.features").map(
+                      (feature: string, idx: number) => (
+                        <li key={idx} className="flex items-start">
+                          <span className="text-[#C8102E] mr-2 mt-1">✓</span>
+                          <span className="text-gray-700 text-sm">
+                            {feature}
+                          </span>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                {/* Standard Bag */}
+                <div className="relative p-8 bg-gray-100 border-2 border-gray-300 rounded-lg">
+                  <div className="absolute top-4 right-4 bg-gray-400 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    STANDARD
+                  </div>
+                  <div className="mb-6">
+                    <div className="w-full h-32 bg-gray-200 rounded-lg flex items-center justify-center mb-4 border border-gray-300">
+                      <div className="text-center">
+                        <div className="text-4xl mb-2 opacity-50"></div>
+                        <div className="text-gray-500 text-sm font-medium">
+                          Standard Quality
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-600 mb-4">
+                    {t("bagComparison.standard.label")}
+                  </h3>
+                  <ul className="space-y-2">
+                    {t.raw("bagComparison.standard.features").map(
+                      (feature: string, idx: number) => (
+                        <li key={idx} className="flex items-start">
+                          <span className="text-gray-400 mr-2 mt-1">•</span>
+                          <span className="text-gray-500 text-sm">
+                            {feature}
+                          </span>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </>
+        )}
+
         {/* Specifications */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">

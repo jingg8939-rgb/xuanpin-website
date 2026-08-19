@@ -76,7 +76,75 @@
     "relatedProducts": "相关产品",
     "requestQuote": "索取报价",
     "parameter": "参数",
-    "value": "数值"
+    "value": "数值",
+    "productTypes": {
+      "title": "我们的碳酸钙母粒系列",
+      "subtitle": "我们提供三种专业化产品线，满足不同应用需求",
+      "nano": {
+        "name": "纳米级碳酸钙",
+        "desc": "超细粒径，卓越的透明度和力学性能"
+      },
+      "modified": {
+        "name": "表面改性料",
+        "desc": "经偶联剂处理，相容性和分散性更佳"
+      },
+      "highFiller": {
+        "name": "高填充料",
+        "desc": "最大填充量选择，显著降低成本而不影响质量"
+      }
+    },
+    "comparisonTable": {
+      "title": "传统填充料 vs 纳米/改性碳酸钙",
+      "headers": {
+        "feature": "特性",
+        "conventional": "传统填充料",
+        "nano": "纳米/改性碳酸钙"
+      },
+      "rows": {
+        "particle": {
+          "label": "粒径",
+          "conventional": "普通碳酸钙",
+          "nano": "纳米级碳酸钙"
+        },
+        "modification": {
+          "label": "改性处理",
+          "conventional": "标准",
+          "nano": "表面改性"
+        },
+        "dispersion": {
+          "label": "分散性",
+          "conventional": "标准",
+          "nano": "增强分散"
+        },
+        "loading": {
+          "label": "填充量",
+          "conventional": "标准",
+          "nano": "高填充量选择"
+        }
+      }
+    },
+    "bagComparison": {
+      "title": "视觉质量对比",
+      "subtitle": "看看我们先进母粒带来的差异",
+      "premium": {
+        "label": "使用纳米/改性母粒",
+        "features": [
+          "卓越的透明度",
+          "光滑的表面",
+          "增强的强度",
+          "更好的印刷适性"
+        ]
+      },
+      "standard": {
+        "label": "传统填充料",
+        "features": [
+          "不透明外观",
+          "粗糙表面",
+          "标准强度",
+          "印刷质量有限"
+        ]
+      }
+    }
   },
   "about": {
     "title": "关于轩品",

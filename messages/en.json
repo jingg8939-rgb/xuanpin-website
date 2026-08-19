@@ -76,7 +76,75 @@
     "relatedProducts": "Related Products",
     "requestQuote": "Request a Quote",
     "parameter": "Parameter",
-    "value": "Value"
+    "value": "Value",
+    "productTypes": {
+      "title": "Our Calcium Carbonate Masterbatch Range",
+      "subtitle": "We offer three specialized product lines to meet diverse application needs",
+      "nano": {
+        "name": "Nano CaCO₃",
+        "desc": "Ultra-fine particle size for superior transparency and mechanical properties"
+      },
+      "modified": {
+        "name": "Surface Modified",
+        "desc": "Treated with coupling agents for enhanced compatibility and dispersion"
+      },
+      "highFiller": {
+        "name": "High-Filler-Content",
+        "desc": "Maximum loading options for significant cost reduction without compromising quality"
+      }
+    },
+    "comparisonTable": {
+      "title": "Conventional Filler vs Nano & Modified CaCO₃",
+      "headers": {
+        "feature": "Feature",
+        "conventional": "Conventional Filler",
+        "nano": "Nano & Modified CaCO₃"
+      },
+      "rows": {
+        "particle": {
+          "label": "Particle",
+          "conventional": "Conventional CaCO₃",
+          "nano": "Nano-Scale CaCO₃"
+        },
+        "modification": {
+          "label": "Modification",
+          "conventional": "Standard",
+          "nano": "Surface Modified"
+        },
+        "dispersion": {
+          "label": "Dispersion",
+          "conventional": "Standard",
+          "nano": "Enhanced Dispersion"
+        },
+        "loading": {
+          "label": "Loading",
+          "conventional": "Standard",
+          "nano": "High-Filler-Content Options"
+        }
+      }
+    },
+    "bagComparison": {
+      "title": "Visual Quality Comparison",
+      "subtitle": "See the difference our advanced masterbatch makes",
+      "premium": {
+        "label": "With Nano/Modified Masterbatch",
+        "features": [
+          "Superior transparency",
+          "Smooth surface finish",
+          "Enhanced strength",
+          "Better printability"
+        ]
+      },
+      "standard": {
+        "label": "Conventional Filler",
+        "features": [
+          "Opaque appearance",
+          "Rough surface",
+          "Standard strength",
+          "Limited print quality"
+        ]
+      }
+    }
   },
   "about": {
     "title": "About Xuanpin",
