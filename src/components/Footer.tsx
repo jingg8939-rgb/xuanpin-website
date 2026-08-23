@@ -4,41 +4,55 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
   const t = useTranslations("footer");
-  const navT = useTranslations("nav");
 
-  const quickLinks = [
-    { href: "/", label: navT("home") },
-    { href: "/products", label: navT("products") },
-    { href: "/about", label: navT("about") },
-    { href: "/contact", label: navT("contact") },
+  const productLinks = [
+    { href: "/products/pbat-ab-masterbatch-system", label: "PBAT Masterbatch" },
+    { href: "/products/pla-compound-masterbatch", label: "PLA Masterbatch" },
+    { href: "/products/caco3-masterbatch", label: "CaCO₃ Masterbatch" },
+    { href: "/products/barium-sulfate-masterbatch", label: "BaSO₄ Masterbatch" },
+    { href: "/products/talc-masterbatch", label: "Talc Masterbatch" },
+    { href: "/products/ppa-masterbatch", label: "PPA Masterbatch" },
+  ];
+
+  const companyLinks = [
+    { href: "/about", label: t("aboutUs") },
+    { href: "/about", label: t("qualityLab") },
+    { href: "/products", label: t("applications") },
+    { href: "/news", label: t("newsCenter") },
+    { href: "/contact", label: t("contactUs") },
   ];
 
   return (
-    <footer className="bg-[#1a1a1a] text-gray-300">
+    <footer className="bg-[#111111] text-gray-300">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
-          {/* Company Info */}
+          {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-md bg-[#C8102E]">
-                <span className="text-lg font-bold text-white">X</span>
+            <Link href="/" className="flex items-center gap-3 mb-4">
+              <img
+                src="/logo.png"
+                alt="Xuanpin Logo"
+                className="h-10 w-10 rounded-lg object-contain"
+              />
+              <div className="flex flex-col">
+                <span className="text-lg font-bold text-white leading-tight">
+                  Xuanpin New Materials
+                </span>
+                <span className="text-xs text-gray-400">Masterbatch Solutions</span>
               </div>
-              <span className="text-xl font-bold tracking-tight text-white">
-                XUANPIN
-              </span>
             </Link>
-            <p className="mt-4 text-sm leading-relaxed text-gray-400">
-              {t("about")}
+            <p className="text-sm leading-relaxed text-gray-400">
+              {t("brandTagline")}
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Product Links */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-              {t("quickLinks")}
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">
+              {t("productLinks")}
             </h3>
-            <ul className="mt-4 space-y-3">
-              {quickLinks.map((link) => (
+            <ul className="space-y-2.5">
+              {productLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -51,65 +65,60 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Products */}
+          {/* Company */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-              {t("products")}
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">
+              {t("company")}
             </h3>
-            <ul className="mt-4 space-y-3">
-              <li>
-                <Link
-                  href="/products"
-                  className="text-sm text-gray-400 transition-colors hover:text-white"
-                >
-                  {t("biodegradable")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products"
-                  className="text-sm text-gray-400 transition-colors hover:text-white"
-                >
-                  {t("performance")}
-                </Link>
-              </li>
+            <ul className="space-y-2.5">
+              {companyLinks.map((link) => (
+                <li key={link.href + link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-gray-400 transition-colors hover:text-white"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">
               {t("contact")}
             </h3>
-            <ul className="mt-4 space-y-4">
+            <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#C8102E]" />
-                <span className="text-sm text-gray-400">
-                  Xingguo County Industrial Park, Ganzhou City, Jiangxi Province, China
+                <span className="text-sm text-gray-400 leading-relaxed">
+                  Jingwulangqin Shan, Laodong Dong Road, Yuhua District, Changsha City, Hunan Province
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-[#C8102E]" />
-                <span className="text-sm text-gray-400">+86 797-5518888</span>
+                <span className="text-sm text-gray-400">+86 188 16486452</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-[#C8102E]" />
-                <span className="text-sm text-gray-400">info@xuanpin.com</span>
+                <span className="text-sm text-gray-400">xuan@xuanpinglobal.com</span>
               </li>
             </ul>
           </div>
         </div>
 
+        {/* Bottom */}
         <div className="mt-12 border-t border-gray-800 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-gray-400">
               © {new Date().getFullYear()} Jiangxi Xuanpin New Materials Co., Ltd. {t("rights")}
             </p>
             <div className="flex gap-6">
-              <Link href="#" className="text-sm text-gray-400 hover:text-white">
+              <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
                 {t("privacy")}
               </Link>
-              <Link href="#" className="text-sm text-gray-400 hover:text-white">
+              <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
                 {t("terms")}
               </Link>
             </div>

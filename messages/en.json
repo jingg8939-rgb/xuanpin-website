@@ -2,58 +2,180 @@
   "nav": {
     "home": "Home",
     "products": "Products",
-    "about": "About",
+    "about": "About Us",
     "contact": "Contact",
     "getQuote": "Get a Quote",
     "menu": "Menu",
     "closeMenu": "Close menu",
-    "news": "News"
+    "news": "News",
+    "quality": "Quality & Lab",
+    "applications": "Applications"
   },
   "home": {
     "hero": {
-      "title": "Global Masterbatch Solutions Provider",
-      "subtitle": "Factory Direct · R&D Customization · Global Export",
+      "badge": "Professional Masterbatch Manufacturer",
+      "title": "Your Trusted Masterbatch Manufacturer for Innovative Plastic Solutions",
+      "subtitle": "From biodegradable PBAT/PLA A/B masterbatch solutions to high-performance mineral-filled and functional masterbatch, we deliver consistent quality with annual production capacity of 100,000+ tons.",
       "exploreProducts": "Explore Products",
-      "contactUs": "Contact Us"
-    },
-    "advantages": {
-      "title": "Why Choose Xuanpin",
-      "factory": {
-        "title": "Factory Direct Supply",
-        "desc": "Direct from our manufacturing facility, ensuring competitive pricing and consistent quality control."
-      },
-      "rnd": {
-        "title": "R&D Customization",
-        "desc": "Dedicated R&D team providing tailored formulations to meet your specific application requirements."
-      },
-      "export": {
-        "title": "Global Export",
-        "desc": "Serving customers in 30+ countries with reliable logistics and international trade expertise."
-      },
-      "quality": {
-        "title": "Quality Assurance",
-        "desc": "ISO-certified quality management system with rigorous testing at every production stage."
+      "requestSamples": "Request Free Samples",
+      "contactUs": "Contact Us",
+      "stats": {
+        "cert1": "RoHS Compliant",
+        "cert2": "OK Compost Certified",
+        "capacity": "100,000+",
+        "capacityLabel": "Tons Annual Capacity",
+        "countries": "30+",
+        "countriesLabel": "Countries Exported",
+        "years": "30+",
+        "yearsLabel": "Years Experience",
+        "clients": "200+",
+        "clientsLabel": "Global Clients"
       }
     },
+    "whyChooseUs": {
+      "badge": "Why Choose Us",
+      "title": "Why Choose Xuanpin",
+      "subtitle": "A trusted masterbatch manufacturer with global reach, advanced technology, and decades of expertise.",
+      "items": [
+        {
+          "title": "Global Manufacturing Capability",
+          "desc": "4 Manufacturing Bases + Indonesia Production Facility + Global Marketing Center. Providing stable production capacity and reliable supply support for customers worldwide."
+        },
+        {
+          "title": "100,000+ Tons Annual Production Capacity",
+          "desc": "Large-scale manufacturing capability ensures consistent quality, stable delivery, and long-term supply."
+        },
+        {
+          "title": "Advanced Sustainable Material Solutions",
+          "desc": "Specialized in PBAT/PLA A-B Masterbatch Systems for biodegradable plastic applications."
+        },
+        {
+          "title": "Customized Formulation Services",
+          "desc": "OEM/ODM solutions based on different polymers, processing conditions, and end-use requirements."
+        },
+        {
+          "title": "Experienced R&D Team",
+          "desc": "Supported by a professional R&D team with 30+ years of material development expertise, focusing on innovation and formula optimization."
+        },
+        {
+          "title": "Global Export Experience",
+          "desc": "Serving international customers with professional technical support and global supply capabilities."
+        }
+      ]
+    },
     "products": {
-      "title": "Our Products",
-      "subtitle": "Comprehensive masterbatch solutions for diverse industrial applications",
-      "biodegradable": {
-        "title": "Biodegradable Solutions",
-        "desc": "Eco-friendly masterbatch products for sustainable packaging and agricultural applications"
+      "badge": "Our Products",
+      "title": "Masterbatch Solutions",
+      "subtitle": "Comprehensive range of biodegradable and functional filler masterbatch for diverse plastic applications",
+      "categories": {
+        "all": "All Products",
+        "biodegradable": "Biodegradable Solutions",
+        "performance": "Performance Enhancement"
       },
-      "performance": {
-        "title": "Performance Enhancement",
-        "desc": "Functional masterbatch products that enhance material properties and reduce costs"
+      "biodegradable": {
+        "title": "Biodegradable Masterbatch Solutions",
+        "desc": "Eco-friendly masterbatch products for sustainable packaging and agricultural applications",
+        "items": [
+          "PBAT A/B Masterbatch",
+          "PLA A/B Masterbatch",
+          "Starch-Based Masterbatch",
+          "Bamboo Powder Masterbatch"
+        ]
+      },
+      "mineral": {
+        "title": "Mineral Filled Masterbatch",
+        "desc": "High-quality mineral filled masterbatch for enhanced performance",
+        "items": [
+          "Nano & Modified Calcium Carbonate Masterbatch",
+          "Barium Sulfate Masterbatch",
+          "Talc Masterbatch"
+        ]
+      },
+      "functional": {
+        "title": "Functional & Performance Masterbatch",
+        "desc": "Functional masterbatch products that enhance material properties and reduce costs",
+        "items": [
+          "Desiccant Masterbatch",
+          "PPA Masterbatch",
+          "Slip & Anti-block Masterbatch",
+          "Anti-static Masterbatch",
+          "Antioxidant Masterbatch",
+          "Matting Masterbatch",
+          "White Masterbatch",
+          "Whitening Masterbatch",
+          "Photo-Oxidation Masterbatch"
+        ]
       },
       "viewDetails": "View Details",
       "viewAll": "View All Products"
     },
+    "story": {
+      "badge": "Our Story",
+      "title": "From Masterbatch Manufacturing to Sustainable Plastic Solutions",
+      "paragraphs": [
+        "Founded in 2008, Xuanpin has been dedicated to masterbatch manufacturing for nearly two decades. From the beginning, we focused on providing reliable filler masterbatch solutions for plastic manufacturers, building our expertise through continuous innovation, quality improvement, and close cooperation with customers.",
+        "Over the years, the global plastics industry has been undergoing significant changes. With increasing demand for sustainable materials and the growing transition toward environmentally responsible plastics, Xuanpin has expanded its capabilities beyond traditional masterbatch solutions into biodegradable and functional materials.",
+        "Today, our product portfolio covers biodegradable masterbatch solutions, including PBAT/PLA A/B masterbatch systems, as well as mineral filled and functional masterbatch solutions such as calcium carbonate, barium sulfate, talc, desiccant, PPA, and other performance additives.",
+        "Supported by multiple manufacturing facilities, a professional marketing center, and an annual production capacity exceeding 100,000 tons, we provide stable supply, customized formulations, and technical support to plastic manufacturers worldwide.",
+        "Our mission is not only to manufacture masterbatch, but also to help customers achieve better performance, cost efficiency, and more sustainable plastic solutions for the future."
+      ],
+      "points": [
+        "Annual capacity exceeding 100,000 tons",
+        "Multiple manufacturing facilities across China and Indonesia",
+        "Free sample program — test before you commit",
+        "Customized formulations and technical support"
+      ],
+      "learnMore": "Learn More About Xuanpin"
+    },
+    "factories": {
+      "badge": "Our Factories",
+      "title": "Four Production Bases Ensuring Quality and Capacity",
+      "subtitle": "Strategically located manufacturing facilities across China, delivering consistent quality masterbatch with a combined annual capacity of 100,000+ tons.",
+      "items": [
+        {
+          "name": "Jiangxi Sheng Pingxiang Shi Xuanpin Plastic Cement Products Co., Ltd.",
+          "address": "Ceramic Industrial Zone, Xiangdong District, Pingxiang City, Jiangxi Province, China",
+          "phone": "+86-0799-3378 777",
+          "fax": "+86-0799-3378 789"
+        },
+        {
+          "name": "Boluo County Yiwei Plastic Co., Ltd.",
+          "address": "Xiaopenggang Village, Longxi Town, Boluo County, Huizhou City, Guangdong Province, China",
+          "phone": "+86-0752-6873 732",
+          "fax": "+86-0752-6873 730"
+        },
+        {
+          "name": "Guizhou Tonghui Plastic Technology Co., Ltd.",
+          "address": "Xiayun Industrial Park, Pingba County, Anshun City, Guizhou Province, China",
+          "phone": "+86-0851-3466 6668",
+          "fax": "+86-0851-3475 2395"
+        },
+        {
+          "name": "Qixuan New Materials Co., Ltd",
+          "address": "Kandang Asin Village, Ulingya Agricultural District, Gresik Regency, East Java Province, Indonesia",
+          "phone": "+62-081515108888",
+          "fax": "+62-081515108888"
+        }
+      ],
+      "learnMore": "Learn More About Our Facilities"
+    },
+    "chinaplas": {
+      "badge": "Exhibition",
+      "title": "Chinaplas Exhibition",
+      "subtitle": "Showcasing Innovation at Asia's Leading Plastics & Rubber Trade Fair",
+      "desc": "Xuanpin New Materials participated in Chinaplas, Asia's largest plastics and rubber industry exhibition, showcasing our latest biodegradable masterbatch solutions and functional filler products. We connected with industry professionals worldwide and demonstrated our commitment to sustainable plastic solutions.",
+      "tags": [
+        "Biodegradable Solutions",
+        "Functional Fillers",
+        "Sustainable Plastics"
+      ]
+    },
     "cta": {
       "title": "Ready to Start Your Project?",
-      "subtitle": "Contact our team for customized masterbatch solutions and competitive quotes",
-      "contactUs": "Contact Us",
-      "requestQuote": "Request a Quote"
+      "subtitle": "Get free samples, request TDS/MSDS documents, or discuss your specific requirements with our technical team.",
+      "contactUs": "Get a Quick Quote",
+      "requestQuote": "Request Free Samples",
+      "requestSamples": "Request Free Samples"
     }
   },
   "products": {
@@ -227,7 +349,7 @@
     "info": {
       "title": "Contact Information",
       "address": "Address",
-      "addressValue": "Jiangxi Xuanpin New Materials Co., Ltd., Jiangxi Province, China",
+      "addressValue": "Jingwulangqin Shan, Laodong Dong Road, Yuhua District, Changsha City, Hunan Province",
       "phone": "Phone",
       "email": "Email",
       "hours": "Business Hours",
@@ -251,11 +373,14 @@
     }
   },
   "footer": {
-    "about": "Professional manufacturer of high-performance masterbatch solutions, serving the global plastics industry with quality and innovation.",
-    "quickLinks": "Quick Links",
-    "products": "Products",
-    "biodegradable": "Biodegradable Solutions",
-    "performance": "Performance Enhancement",
+    "brandTagline": "Your trusted masterbatch manufacturer, delivering consistent quality and innovative solutions for the global plastics industry.",
+    "productLinks": "Product Links",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "qualityLab": "Quality & Lab",
+    "applications": "Applications",
+    "newsCenter": "News Center",
+    "contactUs": "Contact Us",
     "contact": "Contact Info",
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
