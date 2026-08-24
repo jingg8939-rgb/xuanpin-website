@@ -47,10 +47,21 @@ export default async function HomePage({
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden min-h-[80vh] flex items-center">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(200,16,46,0.2),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(200,16,46,0.15),transparent_50%)]" />
+      {/* Hero Section with Video Background */}
+      <section className="relative bg-slate-900 text-white overflow-hidden min-h-[80vh] flex items-center">
+        {/* Video Background */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/hero-video-factory.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(200,16,46,0.25),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(200,16,46,0.2),transparent_50%)]" />
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-4xl">
             <div className="inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-gray-200 mb-6">
