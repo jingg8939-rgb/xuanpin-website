@@ -93,16 +93,16 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#C8102E]" />
                 <span className="text-sm text-gray-400 leading-relaxed">
-                  Jingwulangqin Shan, Laodong Dong Road, Yuhua District, Changsha City, Hunan Province
+                  {t("address")}
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-[#C8102E]" />
-                <span className="text-sm text-gray-400">+86 188 16486452</span>
+                <span className="text-sm text-gray-400">{t("phone")}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-[#C8102E]" />
-                <span className="text-sm text-gray-400">xuan@xuanpinglobal.com</span>
+                <span className="text-sm text-gray-400">{t("email")}</span>
               </li>
             </ul>
           </div>

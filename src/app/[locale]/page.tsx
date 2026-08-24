@@ -52,7 +52,7 @@ export default async function HomePage({
         {/* Video Background */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/hero-video-factory.mp4"
+          src="/hero-video-complete.mp4"
           autoPlay
           loop
           muted
@@ -60,8 +60,8 @@ export default async function HomePage({
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(200,16,46,0.25),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(200,16,46,0.2),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(30,64,175,0.3),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(59,130,246,0.2),transparent_50%)]" />
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-4xl">
             <div className="inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-gray-200 mb-6">

@@ -354,8 +354,8 @@
       "email": "Email",
       "hours": "Business Hours",
       "hoursValue": "Monday - Friday: 9:00 AM - 6:00 PM (GMT+8)",
-      "phoneValue": "+86-0799-3378 777",
-      "emailValue": "info@xuanpin.com"
+      "phoneValue": "+86 188816486452",
+      "emailValue": "xuan@xuanpinglobal.com"
     },
     "form": {
       "title": "Send Us a Message",
@@ -386,6 +386,9 @@
     "contact": "Contact Info",
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Service",
+    "address": "Jiangxi Xuanpin New Materials Co., Ltd., Xiangdong District, Pingxiang City, Jiangxi Province, China",
+    "phone": "+86 188816486452",
+    "email": "xuan@xuanpinglobal.com"
   }
 }

@@ -354,8 +354,8 @@
       "email": "邮箱",
       "hours": "营业时间",
       "hoursValue": "周一至周五：上午9:00 - 下午6:00（GMT+8）",
-      "phoneValue": "+86-0799-3378 777",
-      "emailValue": "info@xuanpin.com"
+      "phoneValue": "+86 188816486452",
+      "emailValue": "xuan@xuanpinglobal.com"
     },
     "form": {
       "title": "给我们留言",
@@ -386,6 +386,9 @@
     "contact": "联系方式",
     "rights": "版权所有。",
     "privacy": "隐私政策",
-    "terms": "服务条款"
+    "terms": "服务条款",
+    "address": "中国江西省萍乡市湘东区 江西轩品新材料有限公司",
+    "phone": "+86 188816486452",
+    "email": "xuan@xuanpinglobal.com"
   }
 }
