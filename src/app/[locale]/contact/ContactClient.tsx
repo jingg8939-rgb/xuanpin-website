@@ -67,13 +67,13 @@ export default function ContactClient({
                 <h3 className="text-sm font-semibold text-gray-700 mb-1">
                   {t("info.phone")}
                 </h3>
-                <p className="text-gray-600">+86 XXX XXXX XXXX</p>
+                <p className="text-gray-600">{t("info.phoneValue")}</p>
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-gray-700 mb-1">
                   {t("info.email")}
                 </h3>
-                <p className="text-gray-600">info@xuanpin.com</p>
+                <p className="text-gray-600">{t("info.emailValue")}</p>
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-gray-700 mb-1">

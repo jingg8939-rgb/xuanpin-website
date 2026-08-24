@@ -62,8 +62,8 @@ export default function ProductsPage({
               key={product.slug}
               className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-gray-200"
             >
-              <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-400 text-sm">Product Image</span>
+              <div className="aspect-video bg-gray-100 overflow-hidden">
+                <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <div className="text-sm text-[#C8102E] font-medium mb-2">

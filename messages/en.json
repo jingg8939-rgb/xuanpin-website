@@ -349,11 +349,13 @@
     "info": {
       "title": "Contact Information",
       "address": "Address",
-      "addressValue": "Jingwulangqin Shan, Laodong Dong Road, Yuhua District, Changsha City, Hunan Province",
+      "addressValue": "Jiangxi Xuanpin New Materials Co., Ltd., Xiangdong District, Pingxiang City, Jiangxi Province, China",
       "phone": "Phone",
       "email": "Email",
       "hours": "Business Hours",
-      "hoursValue": "Monday - Friday: 9:00 AM - 6:00 PM (GMT+8)"
+      "hoursValue": "Monday - Friday: 9:00 AM - 6:00 PM (GMT+8)",
+      "phoneValue": "+86-0799-3378 777",
+      "emailValue": "info@xuanpin.com"
     },
     "form": {
       "title": "Send Us a Message",
