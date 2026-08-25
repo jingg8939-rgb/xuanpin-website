@@ -23,10 +23,10 @@ export default async function AboutPage({
   const t = await getTranslations("about");
 
   const stats = [
-    { key: "capacity", value: "50,000+", unit: "Tons" },
-    { key: "countries", value: "30+", unit: "Countries" },
-    { key: "team", value: "150+", unit: "Members" },
-    { key: "lines", value: "8+", unit: "Lines" },
+    { key: "capacity", value: "50,000+", unitKey: "capacityUnit" },
+    { key: "countries", value: "30+", unitKey: "countriesUnit" },
+    { key: "team", value: "150+", unitKey: "teamUnit" },
+    { key: "lines", value: "8+", unitKey: "linesUnit" },
   ];
 
   const milestones = [
@@ -66,13 +66,13 @@ export default async function AboutPage({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-6 bg-gray-50 rounded-lg">
               <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                Mission
+                {t("mission.missionLabel")}
               </h3>
               <p className="text-gray-600">{t("mission.mission")}</p>
             </div>
             <div className="p-6 bg-gray-50 rounded-lg">
               <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                Vision
+                {t("mission.visionLabel")}
               </h3>
               <p className="text-gray-600">{t("mission.vision")}</p>
             </div>
@@ -109,7 +109,7 @@ export default async function AboutPage({
                 <div className="text-4xl font-bold text-[#C8102E] mb-2">
                   {stat.value}
                 </div>
-                <div className="text-sm text-gray-600">{stat.unit}</div>
+                <div className="text-sm text-gray-600">{t(`stats.${stat.unitKey}`)}</div>
                 <div className="text-sm font-medium text-slate-900 mt-1">
                   {t(`stats.${stat.key}`)}
                 </div>

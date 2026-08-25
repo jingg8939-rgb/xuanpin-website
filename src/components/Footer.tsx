@@ -6,12 +6,12 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   const productLinks = [
-    { href: "/products/pbat-ab-masterbatch-system", label: "PBAT Masterbatch" },
-    { href: "/products/pla-compound-masterbatch", label: "PLA Masterbatch" },
-    { href: "/products/caco3-masterbatch", label: "CaCO₃ Masterbatch" },
-    { href: "/products/barium-sulfate-masterbatch", label: "BaSO₄ Masterbatch" },
-    { href: "/products/talc-masterbatch", label: "Talc Masterbatch" },
-    { href: "/products/ppa-masterbatch", label: "PPA Masterbatch" },
+    { href: "/products/pbat-ab-masterbatch-system", labelKey: "prodPbat" },
+    { href: "/products/pla-compound-masterbatch", labelKey: "prodPla" },
+    { href: "/products/caco3-masterbatch", labelKey: "prodCaco3" },
+    { href: "/products/barium-sulfate-masterbatch", labelKey: "prodBaso4" },
+    { href: "/products/talc-masterbatch", labelKey: "prodTalc" },
+    { href: "/products/ppa-masterbatch", labelKey: "prodPpa" },
   ];
 
   const companyLinks = [
@@ -36,9 +36,9 @@ export default function Footer() {
               />
               <div className="flex flex-col">
                 <span className="text-lg font-bold text-white leading-tight">
-                  Xuanpin New Materials
+                  {t("brandName")}
                 </span>
-                <span className="text-xs text-gray-400">Masterbatch Solutions</span>
+                <span className="text-xs text-gray-400">{t("brandSubline")}</span>
               </div>
             </Link>
             <p className="text-sm leading-relaxed text-gray-400">
@@ -58,7 +58,7 @@ export default function Footer() {
                     href={link.href}
                     className="text-sm text-gray-400 transition-colors hover:text-white"
                   >
-                    {link.label}
+                    {t(link.labelKey)}
                   </Link>
                 </li>
               ))}

@@ -68,10 +68,10 @@ export default function Header() {
             />
             <div className="flex flex-col">
               <span className={cn("text-lg font-bold leading-tight transition-colors", textColor)}>
-                Xuanpin New Materials
+                {t("brandName")}
               </span>
               <span className={cn("text-xs tracking-wide transition-colors", isTransparent ? "text-gray-300" : "text-gray-500")}>
-                Masterbatch Solutions
+                {t("brandSubline")}
               </span>
             </div>
           </Link>
@@ -104,31 +104,31 @@ export default function Header() {
                           href="/products"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C8102E]"
                         >
-                          All Products
+                          {t("allProducts")}
                         </Link>
                         <Link
                           href="/products/pbat-ab-masterbatch-system"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C8102E]"
                         >
-                          PBAT Masterbatch
+                          {t("pbatMasterbatch")}
                         </Link>
                         <Link
                           href="/products/pla-compound-masterbatch"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C8102E]"
                         >
-                          PLA Masterbatch
+                          {t("plaMasterbatch")}
                         </Link>
                         <Link
                           href="/products/caco3-masterbatch"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C8102E]"
                         >
-                          CaCO₃ Masterbatch
+                          {t("caco3Masterbatch")}
                         </Link>
                         <Link
                           href="/products/ppa-masterbatch"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C8102E]"
                         >
-                          White Masterbatch
+                          {t("whiteMasterbatch")}
                         </Link>
                       </div>
                     )}

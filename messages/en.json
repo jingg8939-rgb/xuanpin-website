@@ -9,7 +9,14 @@
     "closeMenu": "Close menu",
     "news": "News",
     "quality": "Quality & Lab",
-    "applications": "Applications"
+    "applications": "Applications",
+    "allProducts": "All Products",
+    "pbatMasterbatch": "PBAT Masterbatch",
+    "plaMasterbatch": "PLA Masterbatch",
+    "caco3Masterbatch": "CaCO₃ Masterbatch",
+    "whiteMasterbatch": "White Masterbatch",
+    "brandName": "Xuanpin New Materials",
+    "brandSubline": "Masterbatch Solutions"
   },
   "home": {
     "hero": {
@@ -286,7 +293,9 @@
     },
     "mission": {
       "title": "Mission & Vision",
+      "missionLabel": "Mission",
       "mission": "To deliver innovative masterbatch solutions that enhance product performance while promoting sustainable manufacturing practices.",
+      "visionLabel": "Vision",
       "vision": "To become the global leader in masterbatch technology, recognized for quality, innovation, and customer service excellence."
     },
     "manufacturing": {
@@ -312,7 +321,11 @@
       "capacity": "Annual Capacity",
       "countries": "Countries Served",
       "team": "Team Members",
-      "lines": "Production Lines"
+      "lines": "Production Lines",
+      "capacityUnit": "Tons",
+      "countriesUnit": "Countries",
+      "teamUnit": "Members",
+      "linesUnit": "Lines"
     },
     "milestones": {
       "title": "Our Journey",
@@ -374,7 +387,13 @@
       "title": "Our Location"
     }
   },
+  "news": {
+    "title": "News & Events",
+    "comingSoon": "Coming soon..."
+  },
   "footer": {
+    "brandName": "Xuanpin New Materials",
+    "brandSubline": "Masterbatch Solutions",
     "brandTagline": "Your trusted masterbatch manufacturer, delivering consistent quality and innovative solutions for the global plastics industry.",
     "productLinks": "Product Links",
     "company": "Company",
@@ -389,6 +408,12 @@
     "terms": "Terms of Service",
     "address": "Jiangxi Xuanpin New Materials Co., Ltd., Xiangdong District, Pingxiang City, Jiangxi Province, China",
     "phone": "+86 188816486452",
-    "email": "xuan@xuanpinglobal.com"
+    "email": "xuan@xuanpinglobal.com",
+    "prodPbat": "PBAT Masterbatch",
+    "prodPla": "PLA Masterbatch",
+    "prodCaco3": "CaCO₃ Masterbatch",
+    "prodBaso4": "BaSO₄ Masterbatch",
+    "prodTalc": "Talc Masterbatch",
+    "prodPpa": "PPA Masterbatch"
   }
 }

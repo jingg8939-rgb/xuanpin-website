@@ -9,7 +9,14 @@
     "closeMenu": "关闭菜单",
     "news": "新闻资讯",
     "quality": "质量与实验室",
-    "applications": "应用领域"
+    "applications": "应用领域",
+    "allProducts": "全部产品",
+    "pbatMasterbatch": "PBAT 母粒",
+    "plaMasterbatch": "PLA 母粒",
+    "caco3Masterbatch": "碳酸钙母粒",
+    "whiteMasterbatch": "白色母粒",
+    "brandName": "轩品新材料",
+    "brandSubline": "母粒解决方案"
   },
   "home": {
     "hero": {
@@ -286,7 +293,9 @@
     },
     "mission": {
       "title": "使命与愿景",
+      "missionLabel": "使命",
       "mission": "提供创新的母粒解决方案，提升产品性能，同时推动可持续制造实践。",
+      "visionLabel": "愿景",
       "vision": "成为全球母粒技术领导者，以质量、创新和卓越客户服务著称。"
     },
     "manufacturing": {
@@ -312,7 +321,11 @@
       "capacity": "年产能",
       "countries": "服务国家",
       "team": "团队成员",
-      "lines": "生产线"
+      "lines": "生产线",
+      "capacityUnit": "吨",
+      "countriesUnit": "个国家",
+      "teamUnit": "人",
+      "linesUnit": "条"
     },
     "milestones": {
       "title": "发展历程",
@@ -374,7 +387,13 @@
       "title": "我们的位置"
     }
   },
+  "news": {
+    "title": "新闻资讯",
+    "comingSoon": "敬请期待..."
+  },
   "footer": {
+    "brandName": "轩品新材料",
+    "brandSubline": "母粒解决方案",
     "brandTagline": "您值得信赖的母粒制造商，为全球塑料工业提供始终如一的品质和创新解决方案。",
     "productLinks": "产品链接",
     "company": "公司",
@@ -389,6 +408,12 @@
     "terms": "服务条款",
     "address": "中国江西省萍乡市湘东区 江西轩品新材料有限公司",
     "phone": "+86 188816486452",
-    "email": "xuan@xuanpinglobal.com"
+    "email": "xuan@xuanpinglobal.com",
+    "prodPbat": "PBAT 母粒",
+    "prodPla": "PLA 母粒",
+    "prodCaco3": "碳酸钙母粒",
+    "prodBaso4": "硫酸钡母粒",
+    "prodTalc": "滑石粉母粒",
+    "prodPpa": "PPA 母粒"
   }
 }
