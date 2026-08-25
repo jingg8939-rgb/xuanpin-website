@@ -1,5 +1,5 @@
-import { getTranslations } from "next-intl/server";
-import Link from "next/link";
+import { getTranslations, getLocale } from "next-intl/server";
+import Link from "next-intl/link";
 
 export async function generateMetadata({
   params,
