@@ -40,7 +40,7 @@ export const products: Product[] = [
   {
     slug: "pbat-ab-masterbatch-system",
     category: "biodegradable",
-    image: "/products/masterbatch-pellets.jpg",
+    image: "/products/pbat-compound.jpg",
     specifications: [
       { label: "Carrier", value: "PBAT" },
       { label: "Addition", value: "A:B ratio per formulation guide" },
@@ -85,7 +85,7 @@ export const products: Product[] = [
   {
     slug: "pbat-biodegradable-masterbatch",
     category: "biodegradable",
-    image: "/products/masterbatch-pellets.jpg",
+    image: "/products/product-detail.jpg",
     specifications: [
       { label: "Carrier", value: "PBAT" },
       { label: "Addition", value: "20-100%" },
@@ -221,7 +221,7 @@ export const products: Product[] = [
   {
     slug: "barium-sulfate-masterbatch",
     category: "performance",
-    image: "/products/masterbatch-pellets.jpg",
+    image: "/products/barium-sulfate.jpg",
     specifications: [
       { label: "Carrier", value: "PP/PE/PS" },
       { label: "BaSO₄ Content", value: "50-80%" },

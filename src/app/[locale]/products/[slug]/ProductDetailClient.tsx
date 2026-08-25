@@ -1,9 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { Link } from "@/i18n/routing";
-import { useState } from "react";
 import type { Product, LocalizedContent } from "@/data/products";
 
 type ProductWithContent = Product & LocalizedContent;
@@ -16,14 +14,7 @@ export default function ProductDetailClient({
   locale: string;
 }) {
   const t = useTranslations("productDetail");
-  const [activeImage, setActiveImage] = useState(0);
-
-  const images = [
-    product.image || "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-  ];
+  const productImage = product.image || "/placeholder.svg";
 
   const relatedProducts = [
     { slug: "talc-masterbatch", name: t("related.talc") },
@@ -47,34 +38,12 @@ export default function ProductDetailClient({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Image Gallery */}
           <div>
-            <div className="aspect-square bg-white rounded-lg mb-4 border border-gray-100 flex items-center justify-center overflow-hidden">
-              <Image
-                src={images[activeImage]}
-                alt={`${product.name} - Image ${activeImage + 1}`}
-                fill
-                className="object-contain"
-                priority={activeImage === 0}
+            <div className="bg-white rounded-lg border border-gray-100 flex items-center justify-center overflow-hidden p-4" style={{maxHeight: '400px'}}>
+              <img
+                src={productImage}
+                alt={`${product.name}`}
+                className="max-w-full max-h-[380px] object-contain rounded"
               />
-            </div>
-            <div className="grid grid-cols-4 gap-2">
-              {images.map((img, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setActiveImage(idx)}
-                  className={`aspect-square bg-white rounded border-2 transition-colors overflow-hidden ${
-                    activeImage === idx
-                      ? "border-[#C8102E]"
-                      : "border-gray-200 hover:border-gray-300"
-                  }`}
-                >
-                  <Image
-                    src={img}
-                    alt={`${product.name} thumbnail ${idx + 1}`}
-                    fill
-                    className="object-contain"
-                  />
-                </button>
-              ))}
             </div>
           </div>
 
