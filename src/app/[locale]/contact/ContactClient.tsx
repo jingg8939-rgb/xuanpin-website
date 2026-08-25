@@ -89,7 +89,7 @@ export default function ContactClient({
                 {t("map.title")}
               </h3>
               <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-                <span className="text-gray-400">Map Placeholder</span>
+                <span className="text-gray-400">{t("map.placeholder")}</span>
               </div>
             </div>
           </div>

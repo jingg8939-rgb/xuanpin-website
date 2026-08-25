@@ -230,7 +230,7 @@ export default function Header() {
 
             {/* Mobile Language Switcher */}
             <div className="pt-4 border-t border-gray-200 mt-4">
-              <div className="text-sm font-medium text-gray-700 mb-2">Language</div>
+              <div className="text-sm font-medium text-gray-700 mb-2">{t("language")}</div>
               <div className="flex gap-2">
                 <button
                   onClick={() => switchLocale("en")}

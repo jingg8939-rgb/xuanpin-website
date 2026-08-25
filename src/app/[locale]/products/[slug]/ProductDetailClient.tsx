@@ -8,17 +8,6 @@ import type { Product, LocalizedContent } from "@/data/products";
 
 type ProductWithContent = Product & LocalizedContent;
 
-const SPEC_LABEL_MAP: Record<string, Record<string, string>> = {
-  "Carrier": { en: "Carrier", zh: "载体" },
-  "CaCO₃ Content": { en: "CaCO₃ Content", zh: "碳酸钙含量" },
-  "Melt Flow Index": { en: "Melt Flow Index", zh: "熔融指数" },
-  "Density": { en: "Density", zh: "密度" },
-  "Processing Temperature": { en: "Processing Temperature", zh: "加工温度" },
-  "Form": { en: "Form", zh: "形态" },
-  "Particle Size": { en: "Particle Size", zh: "粒径" },
-  "Whiteness": { en: "Whiteness", zh: "白度" },
-};
-
 export default function ProductDetailClient({
   product,
   locale,
@@ -37,9 +26,9 @@ export default function ProductDetailClient({
   ];
 
   const relatedProducts = [
-    { slug: "talc-masterbatch", name: "Talc Masterbatch" },
-    { slug: "caco3-masterbatch", name: "Calcium Carbonate Masterbatch" },
-    { slug: "barium-sulfate-masterbatch", name: "Barium Sulfate Masterbatch" },
+    { slug: "talc-masterbatch", name: t("related.talc") },
+    { slug: "caco3-masterbatch", name: t("related.caco3") },
+    { slug: "barium-sulfate-masterbatch", name: t("related.baso4") },
   ];
 
   return (
@@ -367,7 +356,28 @@ export default function ProductDetailClient({
               </thead>
               <tbody className="divide-y divide-gray-200">
                 {product.specifications.map((spec, idx) => {
-                  const localizedLabel = SPEC_LABEL_MAP[spec.label]?.[locale] || spec.label;
+                  const SPEC_KEY_MAP: Record<string, string> = {
+                    "Carrier": "carrier",
+                    "Addition": "addition",
+                    "Melt Flow Index": "meltFlowIndex",
+                    "Density": "density",
+                    "Processing Temperature": "processingTemp",
+                    "Form": "form",
+                    "Moisture Content": "moistureContent",
+                    "Biodegradation Rate": "biodegradationRate",
+                    "Biodegradability": "biodegradability",
+                    "Shelf Life": "shelfLife",
+                    "Heat Resistance": "heatResistance",
+                    "Particle Size": "particleSize",
+                    "Whiteness": "whiteness",
+                    "Appearance": "appearance",
+                    "Moisture Absorption": "moistureAbsorption",
+                    "BaSO₄ Content": "baso4Content",
+                    "CaCO₃ Content": "caco3Content",
+                    "Talc Content": "talcContent",
+                  };
+                  const key = SPEC_KEY_MAP[spec.label];
+                  const localizedLabel = key ? t(`specLabels.${key}` as any) : spec.label;
                   return (
                     <tr key={idx} className="hover:bg-gray-50">
                       <td className="px-6 py-4 text-sm text-gray-600">

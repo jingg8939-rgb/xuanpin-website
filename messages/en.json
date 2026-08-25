@@ -16,7 +16,8 @@
     "caco3Masterbatch": "CaCO₃ Masterbatch",
     "whiteMasterbatch": "White Masterbatch",
     "brandName": "Xuanpin New Materials",
-    "brandSubline": "Masterbatch Solutions"
+    "brandSubline": "Masterbatch Solutions",
+    "language": "Language"
   },
   "home": {
     "hero": {
@@ -207,6 +208,31 @@
     "requestQuote": "Request a Quote",
     "parameter": "Parameter",
     "value": "Value",
+    "specLabels": {
+      "carrier": "Carrier",
+      "addition": "Addition",
+      "meltFlowIndex": "Melt Flow Index",
+      "density": "Density",
+      "processingTemp": "Processing Temperature",
+      "form": "Form",
+      "moistureContent": "Moisture Content",
+      "biodegradationRate": "Biodegradation Rate",
+      "biodegradability": "Biodegradability",
+      "shelfLife": "Shelf Life",
+      "heatResistance": "Heat Resistance",
+      "particleSize": "Particle Size",
+      "whiteness": "Whiteness",
+      "appearance": "Appearance",
+      "moistureAbsorption": "Moisture Absorption",
+      "baso4Content": "BaSO₄ Content",
+      "caco3Content": "CaCO₃ Content",
+      "talcContent": "Talc Content"
+    },
+    "related": {
+      "talc": "Talc Masterbatch",
+      "caco3": "Calcium Carbonate Masterbatch",
+      "baso4": "Barium Sulfate Masterbatch"
+    },
     "productTypes": {
       "title": "Our Calcium Carbonate Masterbatch Range",
       "subtitle": "We offer three specialized product lines to meet diverse application needs",
@@ -384,7 +410,8 @@
       "error": "Something went wrong. Please try again."
     },
     "map": {
-      "title": "Our Location"
+      "title": "Our Location",
+      "placeholder": "Map Placeholder"
     }
   },
   "news": {
@@ -403,6 +430,7 @@
     "newsCenter": "News Center",
     "contactUs": "Contact Us",
     "contact": "Contact Info",
+    "copyright": "© 2026 Jiangxi Xuanpin New Materials Co., Ltd.",
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",

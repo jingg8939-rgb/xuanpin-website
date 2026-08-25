@@ -112,7 +112,7 @@ export default function Footer() {
         <div className="mt-12 border-t border-gray-800 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Jiangxi Xuanpin New Materials Co., Ltd. {t("rights")}
+              {t("copyright")} {t("rights")}
             </p>
             <div className="flex gap-6">
               <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">

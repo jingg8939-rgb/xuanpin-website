@@ -45,6 +45,41 @@ export default async function HomePage({
     "/story_warehouse.png",
   ];
 
+  const productLinks: Record<string, string> = {
+    "PBAT A/B Masterbatch": "/products/pbat-ab-masterbatch-system",
+    "PBAT A/B 母粒": "/products/pbat-ab-masterbatch-system",
+    "PLA A/B Masterbatch": "/products/pla-compound-masterbatch",
+    "PLA A/B 母粒": "/products/pla-compound-masterbatch",
+    "Starch-Based Masterbatch": "/products/pbat-biodegradable-masterbatch",
+    "淀粉基母粒": "/products/pbat-biodegradable-masterbatch",
+    "Bamboo Powder Masterbatch": "/products/defoamer-masterbatch",
+    "竹粉母粒": "/products/defoamer-masterbatch",
+    "Nano & Modified Calcium Carbonate Masterbatch": "/products/caco3-masterbatch",
+    "纳米及改性碳酸钙母粒": "/products/caco3-masterbatch",
+    "Barium Sulfate Masterbatch": "/products/barium-sulfate-masterbatch",
+    "硫酸钡母粒": "/products/barium-sulfate-masterbatch",
+    "Talc Masterbatch": "/products/talc-masterbatch",
+    "滑石粉母粒": "/products/talc-masterbatch",
+    "Desiccant Masterbatch": "/products/defoamer-masterbatch",
+    "消泡母粒": "/products/defoamer-masterbatch",
+    "PPA Masterbatch": "/products/ppa-masterbatch",
+    "PPA 母粒": "/products/ppa-masterbatch",
+    "Slip & Anti-block Masterbatch": "/products/ppa-masterbatch",
+    "爽滑抗粘连母粒": "/products/ppa-masterbatch",
+    "Anti-static Masterbatch": "/products/talc-masterbatch",
+    "抗静电母粒": "/products/talc-masterbatch",
+    "Antioxidant Masterbatch": "/products/ppa-masterbatch",
+    "抗氧化母粒": "/products/ppa-masterbatch",
+    "Matting Masterbatch": "/products/caco3-masterbatch",
+    "消光母粒": "/products/caco3-masterbatch",
+    "White Masterbatch": "/products/barium-sulfate-masterbatch",
+    "白色母粒": "/products/barium-sulfate-masterbatch",
+    "Whitening Masterbatch": "/products/caco3-masterbatch",
+    "增白母粒": "/products/caco3-masterbatch",
+    "Photo-Oxidation Masterbatch": "/products/pbat-biodegradable-masterbatch",
+    "光氧化母粒": "/products/pbat-biodegradable-masterbatch",
+  };
+
   return (
     <div>
       {/* Hero Section with Video Background */}
@@ -194,17 +229,20 @@ export default async function HomePage({
                 }}
               />
               <ul className="space-y-3">
-                {[0, 1, 2, 3].map((i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-2 text-gray-600"
-                  >
-                    <svg className="w-4 h-4 mt-1 text-[#C8102E] shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span>{t(`products.biodegradable.items.${i}`)}</span>
-                  </li>
-                ))}
+                {[0, 1, 2, 3].map((i) => {
+                  const itemName = t(`products.biodegradable.items.${i}`);
+                  const linkHref = productLinks[itemName] || "/products";
+                  return (
+                    <li key={i} className="flex items-start gap-2 text-gray-600">
+                      <svg className="w-4 h-4 mt-1 text-[#C8102E] shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <Link href={linkHref} className="hover:text-[#C8102E] transition-colors">
+                        {itemName}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
             {/* Mineral Filled */}
@@ -216,17 +254,20 @@ export default async function HomePage({
                 }}
               />
               <ul className="space-y-3">
-                {[0, 1, 2].map((i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-2 text-gray-600"
-                  >
-                    <svg className="w-4 h-4 mt-1 text-[#C8102E] shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span>{t(`products.mineral.items.${i}`)}</span>
-                  </li>
-                ))}
+                {[0, 1, 2].map((i) => {
+                  const itemName = t(`products.mineral.items.${i}`);
+                  const linkHref = productLinks[itemName] || "/products";
+                  return (
+                    <li key={i} className="flex items-start gap-2 text-gray-600">
+                      <svg className="w-4 h-4 mt-1 text-[#C8102E] shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <Link href={linkHref} className="hover:text-[#C8102E] transition-colors">
+                        {itemName}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
             {/* Functional */}
@@ -238,17 +279,20 @@ export default async function HomePage({
                 }}
               />
               <ul className="space-y-3">
-                {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-2 text-gray-600"
-                  >
-                    <svg className="w-4 h-4 mt-1 text-[#C8102E] shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span>{t(`products.functional.items.${i}`)}</span>
-                  </li>
-                ))}
+                {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((i) => {
+                  const itemName = t(`products.functional.items.${i}`);
+                  const linkHref = productLinks[itemName] || "/products";
+                  return (
+                    <li key={i} className="flex items-start gap-2 text-gray-600">
+                      <svg className="w-4 h-4 mt-1 text-[#C8102E] shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <Link href={linkHref} className="hover:text-[#C8102E] transition-colors">
+                        {itemName}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
