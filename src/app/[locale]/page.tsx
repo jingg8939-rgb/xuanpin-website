@@ -1,5 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
-import Link from "next-intl/link";
+import { Link } from "@/i18n/routing";
 
 export async function generateMetadata({
   params,
