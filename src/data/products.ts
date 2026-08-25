@@ -130,7 +130,7 @@ export const products: Product[] = [
   {
     slug: "pla-compound-masterbatch",
     category: "biodegradable",
-    image: "/products/masterbatch-pellets.jpg",
+    image: "/products/pla-compound.jpg",
     specifications: [
       { label: "Carrier", value: "PLA" },
       { label: "Addition", value: "20-100%" },
@@ -176,7 +176,7 @@ export const products: Product[] = [
   {
     slug: "ppa-masterbatch",
     category: "performance",
-    image: "/products/masterbatch-pellets.jpg",
+    image: "/products/ppa.jpg",
     specifications: [
       { label: "Carrier", value: "LLDPE/LDPE" },
       { label: "Addition", value: "0.05-0.2%" },
@@ -266,7 +266,7 @@ export const products: Product[] = [
   {
     slug: "talc-masterbatch",
     category: "performance",
-    image: "/products/masterbatch-pellets.jpg",
+    image: "/products/product-detail-2.jpg",
     specifications: [
       { label: "Carrier", value: "PP/PE" },
       { label: "Addition", value: "10-40%" },
@@ -311,7 +311,7 @@ export const products: Product[] = [
   {
     slug: "defoamer-masterbatch",
     category: "performance",
-    image: "/products/masterbatch-pellets.jpg",
+    image: "/products/desiccant.jpg",
     specifications: [
       { label: "Carrier", value: "PP/PE" },
       { label: "Addition", value: "1-3%" },
@@ -356,7 +356,7 @@ export const products: Product[] = [
   {
     slug: "caco3-masterbatch",
     category: "performance",
-    image: "/products/masterbatch-pellets.jpg",
+    image: "/products/nano-calcium-carbonate.jpg",
     specifications: [
       { label: "Carrier", value: "PP/PE" },
       { label: "CaCO₃ Content", value: "60-85%" },
