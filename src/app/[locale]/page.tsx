@@ -98,7 +98,7 @@ export default async function HomePage({
 
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-4xl">
-            <div className="inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-gray-200 mb-6">
+            <div className="inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-[#2F3778] mb-6">
               {t("hero.badge")}
             </div>
             <h1
@@ -133,7 +133,7 @@ export default async function HomePage({
                 { value: t("hero.stats.clients"), label: t("hero.stats.clientsLabel") },
               ].map((stat, i) => (
                 <div key={i} className="text-center">
-                  <div className="text-2xl font-bold text-[#C8102E] mb-1">
+                  <div className="text-2xl font-bold text-[#2F3778] mb-1">
                     {stat.value}
                   </div>
                   {stat.label && (
