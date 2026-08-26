@@ -82,65 +82,59 @@ export default async function HomePage({
 
   return (
     <div>
-      {/* Hero Section with Video Background */}
-      <section className="relative bg-slate-900 text-white overflow-hidden min-h-[80vh] flex items-center">
-        {/* Video Background */}
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          src="/hero-video-complete.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/25" />
-
+      {/* Hero Section */}
+      <section className="relative bg-[#1a2744] text-white overflow-hidden min-h-[85vh] flex items-center">
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-          <div className="max-w-4xl">
-            <div className="inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-[#2F3778] mb-6">
-              {t("hero.badge")}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left: Text */}
+            <div>
+              <div className="inline-flex items-center rounded-full border border-white/20 px-4 py-1.5 text-sm font-medium text-white mb-8">
+                <span className="w-2 h-2 rounded-full bg-[#C8102E] mr-2"></span>
+                {t("hero.badge")}
+              </div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight">
+                Your Trusted Masterbatch Manufacturer
+                <br />
+                <span className="text-gray-400">for Innovative Plastic Solutions</span>
+              </h1>
+              <p className="text-lg text-gray-400 mb-10 max-w-lg leading-relaxed">
+                {t("hero.subtitle")}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/products"
+                  className="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold rounded-lg text-white bg-[#C8102E] hover:bg-[#A00D24] transition-colors"
+                >
+                  {t("hero.exploreProducts")} →
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center px-8 py-3.5 border-2 border-white/30 text-base font-semibold rounded-lg text-white hover:bg-white/10 transition-colors"
+                >
+                  {t("hero.requestSamples")}
+                </Link>
+              </div>
             </div>
-            <h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight"
-              dangerouslySetInnerHTML={{ __html: t("hero.title") }}
-            />
-            <p className="text-xl text-gray-300 mb-10 max-w-3xl">
-              {t("hero.subtitle")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-16">
-              <Link
-                href="/products"
-                className="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold rounded-lg text-white bg-[#C8102E] hover:bg-[#A00D24] transition-colors"
-              >
-                {t("hero.exploreProducts")}
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3.5 border-2 border-white/70 text-base font-semibold rounded-lg text-white hover:bg-white hover:text-slate-900 transition-colors"
-              >
-                {t("hero.requestSamples")}
-              </Link>
-            </div>
-            {/* Hero Stats */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 pt-10 border-t border-white/20">
-              {[
-                { value: t("hero.stats.cert1"), label: "" },
-                { value: t("hero.stats.cert2"), label: "" },
-                { value: t("hero.stats.capacity"), label: t("hero.stats.capacityLabel") },
-                { value: t("hero.stats.countries"), label: t("hero.stats.countriesLabel") },
-                { value: t("hero.stats.years"), label: t("hero.stats.yearsLabel") },
-                { value: t("hero.stats.clients"), label: t("hero.stats.clientsLabel") },
-              ].map((stat, i) => (
-                <div key={i} className="text-center">
-                  <div className="text-2xl font-bold text-[#2F3778] mb-1">
-                    {stat.value}
-                  </div>
-                  {stat.label && (
-                    <div className="text-sm text-gray-400">{stat.label}</div>
-                  )}
-                </div>
-              ))}
+            {/* Right: Video */}
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <video
+                  className="w-full h-[420px] lg:h-[480px] object-cover"
+                  src="/hero-video-complete.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </div>
+              {/* RoHS Badge - top right */}
+              <div className="absolute -top-3 -right-3 bg-[#C8102E] text-white text-xs font-bold px-3 py-1.5 rounded-md shadow-lg">
+                {t("hero.stats.cert1")}
+              </div>
+              {/* OK Compost Badge - bottom left */}
+              <div className="absolute -bottom-3 -left-3 bg-white/90 text-slate-800 text-xs font-bold px-3 py-1.5 rounded-md shadow-lg backdrop-blur">
+                {t("hero.stats.cert2")}
+              </div>
             </div>
           </div>
         </div>
