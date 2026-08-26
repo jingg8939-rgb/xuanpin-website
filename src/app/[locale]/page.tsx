@@ -310,7 +310,7 @@ export default async function HomePage({
       {/* Our Story Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left: Text */}
             <div>
               <span className="inline-block text-sm font-semibold text-[#C8102E] uppercase tracking-wider mb-3">
@@ -345,28 +345,22 @@ export default async function HomePage({
               </Link>
             </div>
             {/* Right: Images */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="col-span-2">
-                <img
-                  src={storyImages[0]}
-                  alt="Production facility"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-              </div>
-              <div>
-                <img
-                  src={storyImages[1]}
-                  alt="Quality lab"
-                  className="w-full h-36 object-cover rounded-lg"
-                />
-              </div>
-              <div>
-                <img
-                  src={storyImages[2]}
-                  alt="Warehouse"
-                  className="w-full h-36 object-cover rounded-lg"
-                />
-              </div>
+            <div className="flex flex-col gap-6">
+              <img
+                src={storyImages[0]}
+                alt="Production facility"
+                className="w-full h-64 object-cover rounded-xl shadow-lg"
+              />
+              <img
+                src={storyImages[1]}
+                alt="Quality lab"
+                className="w-full h-64 object-cover rounded-xl shadow-lg"
+              />
+              <img
+                src={storyImages[2]}
+                alt="Warehouse"
+                className="w-full h-64 object-cover rounded-xl shadow-lg"
+              />
             </div>
           </div>
         </div>
