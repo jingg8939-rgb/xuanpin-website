@@ -196,7 +196,29 @@
     },
     "learnMore": "Learn More",
     "applications": "Applications",
-    "backToProducts": "Back to Products"
+    "backToProducts": "Back to Products",
+    "whyAB": {
+      "badge": "A/B Blend System",
+      "title": "Why A/B?",
+      "description": "Compared with conventional pre-formulated biodegradable masterbatch (PBAT&PLA compound masterbatch), our A/B technology provides greater formulation flexibility and helps minimize unnecessary degradation of PBAT/PLA performance during processing.",
+      "features": [
+        {
+          "number": "01",
+          "title": "Flexible Formulation",
+          "desc": "Adjust the A/B ratio according to different applications and processing requirements. Customers can freely adjust the A/B ratio to achieve the desired balance of processability, mechanical performance, biodegradability, and cost efficiency."
+        },
+        {
+          "number": "02",
+          "title": "Better Performance Retention",
+          "desc": "Reduce unnecessary thermal and processing stress on PBAT/PLA. PBAT and PLA can experience performance degradation when exposed to repeated or excessive thermal processing. Our A/B approach is designed to minimize unnecessary reprocessing and help preserve the inherent performance of PBAT/PLA."
+        },
+        {
+          "number": "03",
+          "title": "Cost Optimization",
+          "desc": "Optimize the formulation according to your application requirements and avoid unnecessary material consumption."
+        }
+      ]
+    }
   },
   "productDetail": {
     "backToProducts": "Back to Products",

@@ -196,7 +196,29 @@
     },
     "learnMore": "了解更多",
     "applications": "应用领域",
-    "backToProducts": "返回产品列表"
+    "backToProducts": "返回产品列表",
+    "whyAB": {
+      "badge": "A/B 共混体系",
+      "title": "为什么选择 A/B？",
+      "description": "与传统的预配方可降解母粒（PBAT&PLA 复合母粒）相比，我们的 A/B 技术提供更大的配方灵活性，并有助于在加工过程中最大限度减少 PBAT/PLA 性能的不必要降解。",
+      "features": [
+        {
+          "number": "01",
+          "title": "灵活配方",
+          "desc": "根据不同应用和加工要求调整 A/B 比例。客户可以自由调整 A/B 比例，以达到加工性、机械性能、可降解性和成本效率之间的理想平衡。"
+        },
+        {
+          "number": "02",
+          "title": "更好的性能保持",
+          "desc": "减少 PBAT/PLA 不必要的热应力和加工应力。PBAT 和 PLA 在反复或过度热加工时可能会出现性能降解。我们的 A/B 方法旨在最大限度减少不必要的再加工，并帮助保持 PBAT/PLA 的固有性能。"
+        },
+        {
+          "number": "03",
+          "title": "成本优化",
+          "desc": "根据您的应用需求优化配方，避免不必要的材料消耗。"
+        }
+      ]
+    }
   },
   "productDetail": {
     "backToProducts": "返回产品列表",
