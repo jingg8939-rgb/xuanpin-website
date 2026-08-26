@@ -11,13 +11,12 @@
     "quality": "Quality & Lab",
     "applications": "Applications",
     "allProducts": "All Products",
-    "pbatMasterbatch": "PBAT Masterbatch",
-    "plaMasterbatch": "PLA Masterbatch",
-    "caco3Masterbatch": "CaCO₃ Masterbatch",
-    "whiteMasterbatch": "White Masterbatch",
     "brandName": "Xuanpin New Materials",
     "brandSubline": "Masterbatch Solutions",
-    "language": "Language"
+    "language": "Language",
+    "biodegradable": "Biodegradable Masterbatch Solutions",
+    "mineral": "Mineral Filled Masterbatch",
+    "functionalPerformance": "Functional & Performance Masterbatch"
   },
   "home": {
     "hero": {
@@ -191,8 +190,9 @@
     "subtitle": "Explore our comprehensive range of masterbatch solutions",
     "categories": {
       "all": "All Products",
-      "biodegradable": "Biodegradable Solutions",
-      "performance": "Performance Enhancement"
+      "biodegradable": "Biodegradable Masterbatch Solutions",
+      "performance": "Functional & Performance Masterbatch",
+      "mineral": "Mineral Filled Masterbatch"
     },
     "learnMore": "Learn More",
     "applications": "Applications",

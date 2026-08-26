@@ -99,7 +99,7 @@ export default function Header() {
                       <ChevronDown className="w-3.5 h-3.5" />
                     </Link>
                     {isProductsOpen && (
-                      <div className="absolute top-full left-0 mt-1 w-56 rounded-lg bg-white shadow-xl border border-gray-100 py-2 z-50">
+                      <div className="absolute top-full left-0 mt-1 w-72 rounded-lg bg-white shadow-xl border border-gray-100 py-2 z-50">
                         <Link
                           href="/products"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C8102E]"
@@ -107,28 +107,22 @@ export default function Header() {
                           {t("allProducts")}
                         </Link>
                         <Link
-                          href="/products/pbat-ab-masterbatch-system"
+                          href="/products?category=biodegradable"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C8102E]"
                         >
-                          {t("pbatMasterbatch")}
+                          {t("biodegradable")}
                         </Link>
                         <Link
-                          href="/products/pla-compound-masterbatch"
+                          href="/products?category=mineral"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C8102E]"
                         >
-                          {t("plaMasterbatch")}
+                          {t("mineral")}
                         </Link>
                         <Link
-                          href="/products/caco3-masterbatch"
+                          href="/products?category=performance"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C8102E]"
                         >
-                          {t("caco3Masterbatch")}
-                        </Link>
-                        <Link
-                          href="/products/ppa-masterbatch"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C8102E]"
-                        >
-                          {t("whiteMasterbatch")}
+                          {t("functionalPerformance")}
                         </Link>
                       </div>
                     )}

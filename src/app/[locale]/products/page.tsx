@@ -19,11 +19,14 @@ export async function generateMetadata({
 
 export default async function ProductsPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ category?: string }>;
 }) {
   const { locale } = await params;
+  const { category } = await searchParams;
   const products = getAllProductsLocalized(locale as Locale);
 
-  return <ProductsClient products={products} locale={locale} />;
+  return <ProductsClient products={products} locale={locale} initialCategory={category || "all"} />;
 }

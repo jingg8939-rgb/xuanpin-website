@@ -11,13 +11,12 @@
     "quality": "质量与实验室",
     "applications": "应用领域",
     "allProducts": "全部产品",
-    "pbatMasterbatch": "PBAT 母粒",
-    "plaMasterbatch": "PLA 母粒",
-    "caco3Masterbatch": "碳酸钙母粒",
-    "whiteMasterbatch": "白色母粒",
     "brandName": "轩品新材料",
     "brandSubline": "母粒解决方案",
-    "language": "语言"
+    "language": "语言",
+    "biodegradable": "可生物降解母粒",
+    "mineral": "矿物填充母粒",
+    "functionalPerformance": "功能与性能母粒"
   },
   "home": {
     "hero": {
@@ -191,8 +190,9 @@
     "subtitle": "探索我们全面的母粒解决方案",
     "categories": {
       "all": "全部产品",
-      "biodegradable": "可生物降解系列",
-      "performance": "功能增强系列"
+      "biodegradable": "可生物降解母粒",
+      "performance": "功能与性能母粒",
+      "mineral": "矿物填充母粒"
     },
     "learnMore": "了解更多",
     "applications": "应用领域",

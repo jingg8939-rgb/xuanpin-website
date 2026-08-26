@@ -9,16 +9,19 @@ import type { Locale } from "@/data/products";
 export default function ProductsPage({
   products,
   locale,
+  initialCategory,
 }: {
   products: ReturnType<typeof getAllProductsLocalized>;
   locale: string;
+  initialCategory?: string;
 }) {
   const t = useTranslations("products");
-  const [activeCategory, setActiveCategory] = useState<string>("all");
+  const [activeCategory, setActiveCategory] = useState<string>(initialCategory || "all");
 
   const categories = [
     { id: "all", label: t("categories.all") },
     { id: "biodegradable", label: t("categories.biodegradable") },
+    { id: "mineral", label: t("categories.mineral") },
     { id: "performance", label: t("categories.performance") },
   ];
 

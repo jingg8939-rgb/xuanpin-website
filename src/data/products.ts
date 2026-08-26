@@ -14,7 +14,7 @@ export interface LocalizedContent {
 
 export interface Product {
   slug: string;
-  category: "biodegradable" | "performance";
+  category: "biodegradable" | "mineral" | "performance";
   image: string;
   specifications: ProductSpec[];
   en: LocalizedContent;
@@ -49,7 +49,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "PBAT A/B Masterbatch",
-      categoryLabel: "Biodegradable Solutions",
+      categoryLabel: "Biodegradable Masterbatch Solutions",
       shortDescription: "Separate A/B or pre-mixed A+B options for fully biodegradable and compostable plastic products.",
       description: "Our PBAT A/B Masterbatch is engineered for producing fully biodegradable and compostable plastic products. Based on PBAT resin with optimized additives, it delivers excellent film blowing performance, mechanical strength, and complete biodegradability in industrial composting conditions.",
       applications: ["Compostable bags", "Mulch films", "Food packaging", "Shopping bags"],
@@ -62,7 +62,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "PBAT A/B 母粒",
-      categoryLabel: "可生物降解系列",
+      categoryLabel: "可生物降解母粒",
       shortDescription: "提供A/B分开或A+B预混选项，用于生产全生物降解和可堆肥塑料制品。",
       description: "我们的PBAT A/B母粒专为生产全生物降解和可堆肥塑料制品而设计。基于PBAT树脂并配以优化添加剂，提供优异的吹膜性能、机械强度，以及在工业堆肥条件下的完全生物降解性。",
       applications: ["可堆肥袋", "地膜", "食品包装", "购物袋"],
@@ -90,7 +90,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "PBAT Biodegradable Masterbatch",
-      categoryLabel: "Biodegradable Solutions",
+      categoryLabel: "Biodegradable Masterbatch Solutions",
       shortDescription: "Fully biodegradable masterbatch based on PBAT resin, compliant with EN 13432 and OK Compost standards.",
       description: "Our PBAT Biodegradable Masterbatch is a single-component, fully biodegradable solution based on premium PBAT resin. It is designed for manufacturers who need a straightforward, drop-in replacement for conventional polyethylene in film and packaging applications. Certified compliant with EN 13432 and OK Compost standards, this masterbatch delivers reliable biodegradability without sacrificing processing ease or end-product quality.",
       applications: ["Compostable bags", "Food service packaging", "Disposable cutlery", "Agricultural films"],
@@ -105,7 +105,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "PBAT生物降解母粒",
-      categoryLabel: "可生物降解系列",
+      categoryLabel: "可生物降解母粒",
       shortDescription: "基于PBAT树脂的全生物降解母粒，符合EN 13432和OK Compost标准。",
       description: "我们的PBAT生物降解母粒是基于优质PBAT树脂的单组分全生物降解解决方案。它专为需要在薄膜和包装应用中简单直接替代传统聚乙烯的制造商设计。该产品获得EN 13432和OK Compost标准认证，在不牺牲加工便利性或最终产品质量的情况下提供可靠的生物降解性。",
       applications: ["可堆肥袋", "食品服务包装", "一次性餐具", "农用薄膜"],
@@ -131,7 +131,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "PLA A/B Masterbatch",
-      categoryLabel: "Biodegradable Solutions",
+      categoryLabel: "Biodegradable Masterbatch Solutions",
       shortDescription: "Separate A/B or pre-mixed A+B options for rigid and semi-rigid biodegradable products.",
       description: "Our PLA A/B Masterbatch provides an ideal solution for rigid and semi-rigid biodegradable products. With excellent processability, surface finish, and formulation flexibility, it is suitable for injection molding, thermoforming, sheet extrusion, and 3D printing filament production. We also offer ready-to-use PLA 3D printing filaments for direct use in 3D printing applications.",
       applications: ["Cups & containers", "Cutlery", "Packaging trays", "3D printing filament"],
@@ -144,7 +144,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "PLA A/B 母粒",
-      categoryLabel: "可生物降解系列",
+      categoryLabel: "可生物降解母粒",
       shortDescription: "提供A/B分开或A+B预混选项，适用于硬质和半硬质生物降解产品。",
       description: "我们的PLA A/B母粒为硬质和半硬质生物降解产品提供理想解决方案。凭借优异的加工性、表面光洁度和配方灵活性，适用于注塑、热成型、片材挤出和3D打印耗材生产。我们还提供即用型PLA 3D打印耗材。",
       applications: ["杯子和容器", "餐具", "包装托盘", "3D打印耗材"],
@@ -173,7 +173,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "PPA Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Functional & Performance Masterbatch",
       shortDescription: "Polymeric Processing Aid masterbatch to eliminate melt fracture, improve surface gloss, and reduce die build-up.",
       description: "Our PPA (Polymeric Processing Aid) Masterbatch is engineered to resolve common processing challenges in polyolefin extrusion. It effectively eliminates melt fracture phenomena such as sharkskin and gross melt fracture, while significantly improving surface gloss and reducing die build-up. The ultra-low addition rate makes it highly cost-effective for high-volume production.",
       applications: ["Blown film", "Cast film", "Pipe extrusion", "Wire & cable"],
@@ -188,7 +188,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "PPA加工助剂母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "功能与性能母粒",
       shortDescription: "聚合物加工助剂母粒，消除熔体破裂，提高表面光泽，减少模头积料。",
       description: "我们的PPA（聚合物加工助剂）母粒专为解决聚烯烃挤出中的常见加工问题而设计。它有效消除熔体破裂现象，如鲨鱼皮和严重熔体破裂，同时显著提高表面光泽并减少模头积料。超低添加量使其在大产量生产中具有极高的成本效益。",
       applications: ["吹膜", "流延膜", "管材挤出", "电线电缆"],
@@ -204,7 +204,7 @@ export const products: Product[] = [
   },
   {
     slug: "barium-sulfate-masterbatch",
-    category: "performance",
+    category: "mineral",
     image: "/products/barium-sulfate.jpg",
     specifications: [
       { label: "Carrier", value: "PP/PE/PS" },
@@ -218,7 +218,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "Barium Sulfate Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Mineral Filled Masterbatch",
       shortDescription: "High-density barium sulfate filler masterbatch for weight increase, radiation shielding, and improved surface finish.",
       description: "Our Barium Sulfate Masterbatch utilizes premium precipitated barium sulfate with high purity and fine particle size. It is designed for applications requiring increased product weight, radiation shielding properties, or enhanced surface finish. The high loading capacity and excellent dispersion ensure consistent performance while maintaining processability.",
       applications: ["Medical X-ray shielding", "Automotive parts", "Appliance shells", "High-end packaging"],
@@ -233,7 +233,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "硫酸钡母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "矿物填充母粒",
       shortDescription: "高密度硫酸钡填充母粒，用于增重、辐射屏蔽和改善表面光洁度。",
       description: "我们的硫酸钡母粒采用优质沉淀硫酸钡，纯度高、粒径细。它专为需要增加产品重量、辐射屏蔽性能或增强表面光洁度的应用而设计。高填充量和优异的分散性确保性能一致，同时保持加工性。",
       applications: ["医用X射线屏蔽", "汽车部件", "家电外壳", "高端包装"],
@@ -249,7 +249,7 @@ export const products: Product[] = [
   },
   {
     slug: "talc-masterbatch",
-    category: "performance",
+    category: "mineral",
     image: "/products/product-detail-2.jpg",
     specifications: [
       { label: "Carrier", value: "PP/PE" },
@@ -263,7 +263,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "Talc Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Mineral Filled Masterbatch",
       shortDescription: "Premium talc filler masterbatch for stiffness enhancement, dimensional stability improvement, and cost reduction.",
       description: "Our Talc Masterbatch incorporates high-quality talc powder with controlled particle size distribution for optimal reinforcement in polyolefin applications. It significantly improves stiffness, dimensional stability, and heat resistance while reducing material costs. The excellent dispersion and compatibility ensure smooth processing and consistent product quality.",
       applications: ["Injection molding", "Blow molding", "Sheet extrusion", "Fiber & tape"],
@@ -278,7 +278,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "滑石粉母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "矿物填充母粒",
       shortDescription: "优质滑石粉填充母粒，用于提高刚性、改善尺寸稳定性和降低成本。",
       description: "我们的滑石粉母粒采用高质量滑石粉，粒径分布可控，为聚烯烃应用提供最佳增强效果。它显著提高刚性、尺寸稳定性和耐热性，同时降低材料成本。优异的分散性和兼容性确保加工顺畅和产品质量一致。",
       applications: ["注塑", "吹塑", "片材挤出", "纤维和编织带"],
@@ -308,7 +308,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "Defoamer Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Functional & Performance Masterbatch",
       shortDescription: "Moisture-absorbing masterbatch that eliminates bubbles and surface defects caused by moisture in recycled or hygroscopic plastics.",
       description: "Our Defoamer Masterbatch is specially formulated to absorb moisture and eliminate gas-related defects in plastic processing. It is essential for processing recycled materials or hygroscopic resins that tend to absorb moisture from the environment. The masterbatch effectively prevents bubbles, voids, and surface imperfections, ensuring high-quality end products without the need for pre-drying.",
       applications: ["Recycled PP/PE film", "Blown film", "Injection molding", "Pipe extrusion"],
@@ -323,7 +323,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "消泡母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "功能与性能母粒",
       shortDescription: "吸湿母粒，消除回收或吸湿性塑料中水分引起的气泡和表面缺陷。",
       description: "我们的消泡母粒专为吸收水分和消除塑料加工中的气体相关缺陷而配制。它对于加工容易从环境中吸收水分的回收材料或吸湿性树脂至关重要。该母粒有效防止气泡、空隙和表面缺陷，确保高质量最终产品，无需预干燥。",
       applications: ["回收PP/PE薄膜", "吹膜", "注塑", "管材挤出"],
@@ -339,7 +339,7 @@ export const products: Product[] = [
   },
   {
     slug: "caco3-masterbatch",
-    category: "performance",
+    category: "mineral",
     image: "/products/nano-calcium-carbonate.jpg",
     specifications: [
       { label: "Carrier", value: "PP/PE" },
@@ -353,7 +353,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "Calcium Carbonate Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Mineral Filled Masterbatch",
       shortDescription: "High-loading calcium carbonate filler masterbatch for significant cost reduction while maintaining good mechanical properties.",
       description: "Our Calcium Carbonate Masterbatch is a high-performance filler solution designed for maximum cost efficiency without compromising product quality. Using premium ground calcium carbonate with optimized particle size and surface treatment, it achieves high loading levels while maintaining excellent dispersion and mechanical properties. This product is widely used across packaging, construction, and consumer goods industries.",
       applications: ["Blown film", "Injection molding", "Pipe & profile extrusion", "Woven bags"],
@@ -368,7 +368,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "碳酸钙母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "矿物填充母粒",
       shortDescription: "高填充碳酸钙填充母粒，在保持良好机械性能的同时显著降低成本。",
       description: "我们的碳酸钙母粒是一种高性能填充解决方案，旨在实现最大成本效率而不牺牲产品质量。采用优质研磨碳酸钙，优化粒径和表面处理，在高填充量下仍保持优异的分散性和机械性能。该产品广泛应用于包装、建筑和消费品行业。",
       applications: ["吹膜", "注塑", "管材和型材挤出", "编织袋"],
@@ -398,7 +398,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "Bamboo Powder Masterbatch",
-      categoryLabel: "Biodegradable Solutions",
+      categoryLabel: "Biodegradable Masterbatch Solutions",
       shortDescription: "Bamboo fiber-infused masterbatch for eco-friendly products with natural bamboo texture and full biodegradability.",
       description: "Our Bamboo Powder Masterbatch incorporates finely processed bamboo fibers into biodegradable polymer carriers. It creates products with a natural bamboo-like texture and feel, while maintaining full biodegradability. Ideal for eco-conscious brands seeking distinctive sustainable products.",
       applications: ["Eco-friendly tableware", "Packaging containers", "Decorative items", "Disposable cutlery"],
@@ -413,7 +413,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "竹粉母粒",
-      categoryLabel: "可生物降解系列",
+      categoryLabel: "可生物降解母粒",
       shortDescription: "竹纤维母粒，用于具有天然竹纹质感的全生物降解环保产品。",
       description: "我们的竹粉母粒将精细加工的竹纤维融入可生物降解聚合物载体中。它创造出具有天然竹子质感和手感的产品，同时保持完全生物降解性。非常适合寻求独特可持续产品的环保品牌。",
       applications: ["环保餐具", "包装容器", "装饰品", "一次性餐具"],
@@ -443,7 +443,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "Slip & Anti-block Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Functional & Performance Masterbatch",
       shortDescription: "Balanced slip and anti-block additive for optimal film surface properties and high-speed packaging performance.",
       description: "Our Slip & Anti-block Masterbatch provides a balanced combination of slip agents and anti-block additives to optimize film surface properties. It ensures excellent film opening, smooth handling during converting, and controlled coefficient of friction (COF) for high-speed packaging lines.",
       applications: ["Shopping bags", "Packaging films", "Lamination films", "Agricultural films"],
@@ -458,7 +458,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "爽滑抗粘连母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "功能与性能母粒",
       shortDescription: "平衡的爽滑和抗粘连添加剂，优化薄膜表面性能和高速包装表现。",
       description: "我们的爽滑抗粘连母粒提供爽滑剂和抗粘连添加剂的平衡组合，以优化薄膜表面性能。它确保优异的薄膜开口性、加工过程中的平滑处理，以及高速包装线的受控摩擦系数（COF）。",
       applications: ["购物袋", "包装薄膜", "复合薄膜", "农用薄膜"],
@@ -488,7 +488,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "Anti-static Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Functional & Performance Masterbatch",
       shortDescription: "Reduces surface resistivity to prevent static charge buildup, dust attraction, and electrical discharge in plastic products.",
       description: "Our Anti-static Masterbatch reduces surface resistivity of plastic products, preventing static charge buildup that attracts dust or causes electrical discharge. Available in both migratory and permanent formulations to suit different application requirements and durability needs.",
       applications: ["Electronics packaging", "Cleanroom films", "Industrial liners", "Textile packaging"],
@@ -503,7 +503,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "抗静电母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "功能与性能母粒",
       shortDescription: "降低表面电阻率，防止塑料制品静电积聚、灰尘吸附和放电。",
       description: "我们的抗静电母粒降低塑料制品的表面电阻率，防止静电积聚引起的灰尘吸附或放电。提供迁移型和永久型两种配方，以满足不同的应用需求和耐久性要求。",
       applications: ["电子包装", "洁净室薄膜", "工业衬垫", "纺织包装"],
@@ -533,7 +533,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "Antioxidant Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Functional & Performance Masterbatch",
       shortDescription: "Thermal and oxidative protection for polymers during processing and end-use, preventing degradation and extending service life.",
       description: "Our Antioxidant Masterbatch provides essential thermal and oxidative protection for polymers during processing and end-use. Combining primary and secondary antioxidants in optimized ratios, it prevents degradation, maintains mechanical properties, and extends product service life in demanding applications.",
       applications: ["Outdoor films", "Automotive parts", "Pipe & profiles", "Fiber & nonwoven"],
@@ -548,7 +548,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "抗氧化母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "功能与性能母粒",
       shortDescription: "为聚合物在加工和使用中提供热氧保护，防止降解并延长使用寿命。",
       description: "我们的抗氧化母粒为聚合物在加工和使用过程中提供必要的热氧保护。以优化比例组合主抗氧化剂和辅助抗氧化剂，防止降解、保持机械性能，并在苛刻应用中延长产品使用寿命。",
       applications: ["户外薄膜", "汽车部件", "管材和型材", "纤维和无纺布"],
@@ -578,7 +578,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "Matting Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Functional & Performance Masterbatch",
       shortDescription: "Creates elegant matte or satin finishes on plastic surfaces with uniform, scratch-resistant matte effects.",
       description: "Our Matting Masterbatch creates elegant matte or satin finishes on plastic surfaces by controlling light reflection. Using specially treated silica or organic matting agents, it delivers uniform, scratch-resistant matte effects without compromising mechanical properties or printability.",
       applications: ["Premium packaging", "Lamination films", "Decorative films", "Label films"],
@@ -593,7 +593,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "消光母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "功能与性能母粒",
       shortDescription: "在塑料表面创建优雅的哑光或 satin 效果，均匀耐刮。",
       description: "我们的消光母粒通过控制光线反射在塑料表面创建优雅的哑光或 satin 效果。使用特殊处理的二氧化硅或有机消光剂，提供均匀、耐刮的哑光效果，同时不影响机械性能或印刷性能。",
       applications: ["高端包装", "复合薄膜", "装饰薄膜", "标签薄膜"],
@@ -623,7 +623,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "White Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Functional & Performance Masterbatch",
       shortDescription: "Premium TiO₂-based white masterbatch delivering exceptional whiteness, opacity, and coverage for diverse applications.",
       description: "Our White Masterbatch uses premium TiO₂ (titanium dioxide) pigments with optimized dispersion technology to deliver exceptional whiteness, opacity, and coverage. Available in various TiO₂ concentrations to balance performance and cost for different application requirements.",
       applications: ["Packaging films", "Injection molded parts", "Fiber & tape", "Household products"],
@@ -638,7 +638,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "白色母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "功能与性能母粒",
       shortDescription: "优质TiO₂白色母粒，提供卓越的白度、遮盖力和覆盖效果。",
       description: "我们的白色母粒采用优质TiO₂（二氧化钛）颜料和优化分散技术，提供卓越的白度、遮盖力和覆盖效果。提供多种TiO₂浓度，以平衡不同应用要求的性能和成本。",
       applications: ["包装薄膜", "注塑件", "纤维和编织带", "日用品"],
@@ -668,7 +668,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "Whitening Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Functional & Performance Masterbatch",
       shortDescription: "Optical brightening masterbatch that enhances visual whiteness and brightness using fluorescence technology.",
       description: "Our Whitening Masterbatch combines optical brightening agents (OBA) with a carrier system to enhance the visual whiteness and brightness of plastic products. Unlike white masterbatch that adds pigment, this product uses fluorescence to make yellowish or gray materials appear brighter and whiter.",
       applications: ["Recycled plastic products", "White films", "Household items", "Packaging"],
@@ -683,7 +683,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "增白母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "功能与性能母粒",
       shortDescription: "光学增白母粒，使用荧光技术增强视觉白度和亮度。",
       description: "我们的增白母粒将光学增白剂（OBA）与载体系统结合，增强塑料制品的视觉白度和亮度。与添加颜料的白色母粒不同，该产品使用荧光使发黄或发灰的材料看起来更亮更白。",
       applications: ["回收塑料制品", "白色薄膜", "日用品", "包装"],
@@ -713,7 +713,7 @@ export const products: Product[] = [
     ],
     en: {
       name: "Photo-Oxidation Masterbatch",
-      categoryLabel: "Performance Enhancement",
+      categoryLabel: "Functional & Performance Masterbatch",
       shortDescription: "UV-triggered degradation additive for controlled plastic fragmentation in applications where collection is difficult.",
       description: "Our Photo-Oxidation Masterbatch contains specialized additives that accelerate the degradation of plastic products when exposed to UV light and oxygen. After a controlled service life, the plastic fragments into smaller pieces that further biodegrade, making it ideal for applications where collection is difficult.",
       applications: ["Agricultural mulch films", "Outdoor packaging", "Forestry wraps", "Disposable items"],
@@ -728,7 +728,7 @@ export const products: Product[] = [
     },
     zh: {
       name: "光氧化母粒",
-      categoryLabel: "功能增强系列",
+      categoryLabel: "功能与性能母粒",
       shortDescription: "UV触发降解添加剂，用于难以回收场景的可控塑料碎裂。",
       description: "我们的光氧化母粒含有专用添加剂，在暴露于紫外线和氧气时加速塑料制品的降解。在可控使用寿命后，塑料碎裂成更小的碎片并进一步生物降解，非常适合难以收集的应用场景。",
       applications: ["农用地膜", "户外包装", "林业包裹", "一次性用品"],
