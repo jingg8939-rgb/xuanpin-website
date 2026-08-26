@@ -437,8 +437,49 @@
     }
   },
   "news": {
-    "title": "News & Events",
-    "comingSoon": "Coming soon..."
+    "title": "News Center",
+    "subtitle": "News & Insights",
+    "description": "Stay updated with the latest company announcements, industry trends, and market insights from the masterbatch and plastics sector.",
+    "companyNews": {
+      "title": "Company News",
+      "subtitle": "Latest updates from Xuanpin"
+    },
+    "news": [
+      {
+        "tag": "Milestone",
+        "title": "Xuanpin Annual Capacity Reaches 50,000 Tons with New Production Line",
+        "desc": "Our 12th twin-screw extrusion line has been commissioned, bringing total annual capacity to over 50,000 tons. The new line specializes in biodegradable PBAT/PLA compounds."
+      },
+      {
+        "tag": "Certification",
+        "title": "Xuanpin Obtains TUV AUSTRIA OK Compost Certification",
+        "desc": "Our PBAT Compound Masterbatch has successfully passed TUV AUSTRIA OK Compost certification, meeting EN 13432 standards for industrial compostability."
+      },
+      {
+        "tag": "Exhibition",
+        "title": "Successful Exhibition at K Show 2024 in Dusseldorf",
+        "desc": "Xuanpin showcased our full product range at K Show 2024, attracting over 200 visitors from 25 countries. Strong interest in our biodegradable solutions from European buyers."
+      },
+      {
+        "tag": "R&D",
+        "title": "New R&D Laboratory Expansion Completed",
+        "desc": "Our expanded R&D facility now features advanced testing equipment including DSC, universal testing machine, and a lab-scale blown film line for application validation."
+      },
+      {
+        "tag": "Partnership",
+        "title": "Partnership with Southeast Asia Distributor Signed",
+        "desc": "Xuanpin has signed an exclusive distribution agreement with a leading polymer additives distributor in Vietnam, strengthening our presence in the ASEAN market."
+      },
+      {
+        "tag": "Quality",
+        "title": "ISO 9001:2015 Recertification Achieved",
+        "desc": "Xuanpin has successfully passed the ISO 9001:2015 recertification audit, demonstrating our continued commitment to quality management excellence."
+      }
+    ],
+    "chinaplas": {
+      "title": "Chinaplas Exhibition",
+      "subtitle": "Our journey at Asia's leading plastics & rubber trade fair"
+    }
   },
   "footer": {
     "brandName": "Xuanpin New Materials",
