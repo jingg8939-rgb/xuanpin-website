@@ -68,12 +68,12 @@ export default async function NewsPage({
           </div>
           <p className="text-gray-500 mb-8 ml-11">{t("chinaplas.subtitle")}</p>
 
-          {/* Horizontal scrollable cards */}
-          <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth">
+          {/* Horizontal scrollable cards — 3 per row */}
+          <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth scrollbar-thumb-gray-300 scrollbar-track-gray-100">
             {exhibitions.map((ex, idx) => (
               <div
                 key={idx}
-                className="flex-shrink-0 w-72 bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 snap-start"
+                className="flex-shrink-0 w-[400px] bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 snap-start"
               >
                 <div className="aspect-video bg-gray-100 relative">
                   <Image
@@ -83,7 +83,7 @@ export default async function NewsPage({
                     className="object-cover"
                   />
                 </div>
-                <div className="p-4">
+                <div className="p-5">
                   <h3 className="font-semibold text-slate-900 text-lg">
                     {ex.title}
                   </h3>
