@@ -418,7 +418,7 @@ export default async function HomePage({
               {t("chinaplas.subtitle")}
             </p>
           </div>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <img
               src="/chinaplas-2026-group.jpg"
               alt="Chinaplas Exhibition 2026"
@@ -442,10 +442,10 @@ export default async function HomePage({
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-[#C8102E] to-[#9e0d24] text-white">
+      <section className="py-24 bg-[#1a2744] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">{t("cta.title")}</h2>
-          <p className="text-xl text-red-100 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
             {t("cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
