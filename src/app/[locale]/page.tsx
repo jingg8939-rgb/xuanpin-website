@@ -155,7 +155,7 @@ export default async function HomePage({
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {["🏭", "", "🌱", "️", "🔬", "🌍"].map((emoji, i) => (
+            {['🏭', '', '🌱', '⚙️', '🔬', '🌍'].map((emoji, i) => (
               <div
                 key={i}
                 className="p-8 rounded-xl border border-gray-100 hover:border-[#C8102E]/30 hover:shadow-lg transition-all bg-white"
