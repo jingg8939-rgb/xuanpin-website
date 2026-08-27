@@ -58,36 +58,38 @@ export default function ProductsPage({
           ))}
         </div>
 
-        {/* Why A/B Section */}
-        <div className="mb-16">
-          <div className="inline-block text-sm font-semibold text-[#2F3778] uppercase tracking-wider mb-3">
-            {t("whyAB.badge")}
-          </div>
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">
-            {t("whyAB.title")}
-          </h2>
-          <p className="text-gray-600 max-w-3xl leading-relaxed mb-8">
-            {t("whyAB.description")}
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[0, 1, 2].map((i) => (
-              <div
-                key={i}
-                className="bg-slate-50 rounded-xl p-6 border border-gray-200"
-              >
-                <div className="text-sm font-bold text-[#2F3778] mb-3">
-                  {t(`whyAB.features.${i}.number`)}
+        {/* Why A/B Section - Only show for biodegradable or all */}
+        {(activeCategory === "all" || activeCategory === "biodegradable") && (
+          <div className="mb-16">
+            <div className="inline-block text-sm font-semibold text-[#2F3778] uppercase tracking-wider mb-3">
+              {t("whyAB.badge")}
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">
+              {t("whyAB.title")}
+            </h2>
+            <p className="text-gray-600 max-w-3xl leading-relaxed mb-8">
+              {t("whyAB.description")}
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[0, 1, 2].map((i) => (
+                <div
+                  key={i}
+                  className="bg-slate-50 rounded-xl p-6 border border-gray-200"
+                >
+                  <div className="text-sm font-bold text-[#2F3778] mb-3">
+                    {t(`whyAB.features.${i}.number`)}
+                  </div>
+                  <h3 className="text-lg font-semibold text-slate-900 mb-3">
+                    {t(`whyAB.features.${i}.title`)}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {t(`whyAB.features.${i}.desc`)}
+                  </p>
                 </div>
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">
-                  {t(`whyAB.features.${i}.title`)}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {t(`whyAB.features.${i}.desc`)}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
