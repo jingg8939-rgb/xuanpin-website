@@ -334,74 +334,30 @@
   },
   "about": {
     "title": "About Xuanpin",
-    "subtitle": "Leading manufacturer of high-performance masterbatch solutions",
-    "intro": {
-      "title": "Company Introduction",
-      "content": "Jiangxi Xuanpin New Materials Co., Ltd. is a professional manufacturer specializing in the research, development, and production of various masterbatch products. With state-of-the-art manufacturing facilities and a dedicated R&D team, we provide comprehensive solutions for the plastics industry worldwide."
-    },
-    "mission": {
-      "title": "Mission & Vision",
-      "missionLabel": "Mission",
-      "mission": "To deliver innovative masterbatch solutions that enhance product performance while promoting sustainable manufacturing practices.",
-      "visionLabel": "Vision",
-      "vision": "To become the global leader in masterbatch technology, recognized for quality, innovation, and customer service excellence."
-    },
-    "manufacturing": {
-      "title": "Manufacturing & Quality",
-      "facility": {
-        "title": "Advanced Facility",
-        "desc": "50,000+ tons annual capacity with 8+ production lines"
-      },
-      "rd": {
-        "title": "R&D Center",
-        "desc": "Dedicated research team developing cutting-edge formulations"
-      },
-      "quality": {
-        "title": "Quality Control",
-        "desc": "ISO-certified quality management with rigorous testing"
-      },
-      "global": {
-        "title": "Global Reach",
-        "desc": "Exporting to 30+ countries with reliable logistics"
-      }
-    },
-    "stats": {
-      "capacity": "Annual Capacity",
-      "countries": "Countries Served",
-      "team": "Team Members",
-      "lines": "Production Lines",
-      "capacityUnit": "Tons",
-      "countriesUnit": "Countries",
-      "teamUnit": "Members",
-      "linesUnit": "Lines"
+    "subtitle": "A professional masterbatch manufacturer with 15+ years of experience, dedicated to delivering consistent quality and innovative solutions for the global plastics industry.",
+    "story": {
+      "title": "From Local Manufacturer to Global Supplier",
+      "p1": "Founded in 2008 in Jiangxi, Xuanpin started as a small filler masterbatch producer with just 2 production lines. Over 15 years, we have grown into a comprehensive masterbatch manufacturer with 30+ production lines and annual capacity exceeding 100,000 tons.",
+      "p2": "Our product range now covers both biodegradable masterbatch (PBAT/PLA A/B masterbatch) and functional fillers (CaCO3, BaSO4, Talc, PPA, Desiccant and so on), serving blow film, injection molding, extrusion, and packaging applications worldwide.",
+      "p3": "We are not a trading company — we are the manufacturer. Every batch is produced in our own facility with full quality control, ensuring consistent quality and competitive pricing.",
+      "cta": "Schedule a Factory Visit"
     },
     "milestones": {
-      "title": "Our Journey",
-      "founded": {
-        "year": "2015",
-        "title": "Company Founded",
-        "desc": "Established in Jiangxi with initial focus on calcium carbonate masterbatch"
-      },
-      "expansion": {
-        "year": "2017",
-        "title": "Product Line Expansion",
-        "desc": "Added PPA, talc, and defoamer masterbatch production lines"
-      },
-      "export": {
-        "year": "2019",
-        "title": "Export Business Launch",
-        "desc": "Began international operations, serving Southeast Asian markets"
-      },
-      "innovation": {
-        "year": "2021",
-        "title": "Biodegradable Solutions",
-        "desc": "Launched PBAT and PLA compound masterbatch for sustainable packaging"
-      },
-      "growth": {
-        "year": "2023",
-        "title": "Global Expansion",
-        "desc": "Expanded to European and American markets with 30+ country presence"
-      }
+      "title": "Milestones",
+      "subtitle": "Our Journey",
+      "m2008": "Jiangxi Xuanpin established",
+      "m2015": "ISO 9001:2015 certified, started exporting to Southeast Asia",
+      "m2016": "Guangdong Yiwei established",
+      "m2018": "Guizhou Tonghui established",
+      "m2020": "Hunan Xuanpin established",
+      "m2021": "Renovation and expansion project for plastic masterbatch successfully launched. It has 50,000 tons annual output capacity.",
+      "m2023": "Our plastic modified material intelligent production line project fully put into operation, the annual output is 8,000 tons",
+      "m2024": "Indonesia PT QI Xuan established"
+    },
+    "export": {
+      "title": "Exporting to 30+ Countries",
+      "desc": "Our products are trusted by plastic manufacturers across Southeast Asia, Middle East, Europe, South America, and Africa. We provide export documentation, logistic support, and technical assistance for international clients.",
+      "cta": "Become a Partner"
     }
   },
   "contact": {
