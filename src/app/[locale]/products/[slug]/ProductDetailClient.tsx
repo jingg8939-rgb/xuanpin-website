@@ -64,6 +64,54 @@ export default function ProductDetailClient({
             >
               {t("requestQuote")}
             </Link>
+
+            {/* Calcium Carbonate Range Cards */}
+            {product.slug === "caco3-masterbatch" && (
+              <div className="mt-10">
+                <h2 className="text-xl font-bold text-slate-900 mb-1">
+                  {t("productTypes.title")}
+                </h2>
+                <p className="text-gray-600 text-sm mb-5">{t("productTypes.subtitle")}</p>
+                <div className="grid grid-cols-3 gap-4">
+                  {/* Nano CaCO3 */}
+                  <div className="p-4 bg-white border-2 border-[#C8102E] rounded-lg shadow-sm">
+                    <div className="w-10 h-10 bg-[#C8102E] rounded-full flex items-center justify-center mb-3">
+                      <span className="text-white text-lg font-bold">N</span>
+                    </div>
+                    <h3 className="text-sm font-bold text-slate-900 mb-1.5">
+                      {t("productTypes.nano.name")}
+                    </h3>
+                    <p className="text-gray-600 text-xs">
+                      {t("productTypes.nano.desc")}
+                    </p>
+                  </div>
+                  {/* Surface Modified */}
+                  <div className="p-4 bg-white border-2 border-[#C8102E] rounded-lg shadow-sm">
+                    <div className="w-10 h-10 bg-[#C8102E] rounded-full flex items-center justify-center mb-3">
+                      <span className="text-white text-lg font-bold">M</span>
+                    </div>
+                    <h3 className="text-sm font-bold text-slate-900 mb-1.5">
+                      {t("productTypes.modified.name")}
+                    </h3>
+                    <p className="text-gray-600 text-xs">
+                      {t("productTypes.modified.desc")}
+                    </p>
+                  </div>
+                  {/* High-Filler-Content */}
+                  <div className="p-4 bg-white border-2 border-[#C8102E] rounded-lg shadow-sm">
+                    <div className="w-10 h-10 bg-[#C8102E] rounded-full flex items-center justify-center mb-3">
+                      <span className="text-white text-lg font-bold">H</span>
+                    </div>
+                    <h3 className="text-sm font-bold text-slate-900 mb-1.5">
+                      {t("productTypes.highFiller.name")}
+                    </h3>
+                    <p className="text-gray-600 text-xs">
+                      {t("productTypes.highFiller.desc")}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
@@ -114,51 +162,7 @@ export default function ProductDetailClient({
         {/* Calcium Carbonate Specific Sections */}
         {product.slug === "caco3-masterbatch" && (
           <>
-            {/* Product Types */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold text-slate-900 mb-2">
-                {t("productTypes.title")}
-              </h2>
-              <p className="text-gray-600 mb-6">{t("productTypes.subtitle")}</p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {/* Nano CaCO3 */}
-                <div className="p-6 bg-white border-2 border-[#C8102E] rounded-lg shadow-sm">
-                  <div className="w-12 h-12 bg-[#C8102E] rounded-full flex items-center justify-center mb-4">
-                    <span className="text-white text-xl font-bold">N</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    {t("productTypes.nano.name")}
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    {t("productTypes.nano.desc")}
-                  </p>
-                </div>
-                {/* Surface Modified */}
-                <div className="p-6 bg-white border-2 border-[#C8102E] rounded-lg shadow-sm">
-                  <div className="w-12 h-12 bg-[#C8102E] rounded-full flex items-center justify-center mb-4">
-                    <span className="text-white text-xl font-bold">M</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    {t("productTypes.modified.name")}
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    {t("productTypes.modified.desc")}
-                  </p>
-                </div>
-                {/* High-Filler-Content */}
-                <div className="p-6 bg-white border-2 border-[#C8102E] rounded-lg shadow-sm">
-                  <div className="w-12 h-12 bg-[#C8102E] rounded-full flex items-center justify-center mb-4">
-                    <span className="text-white text-xl font-bold">H</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    {t("productTypes.highFiller.name")}
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    {t("productTypes.highFiller.desc")}
-                  </p>
-                </div>
-              </div>
-            </section>
+            {/* Product Types removed - now displayed in hero area */}
 
             {/* Comparison Table */}
             <section className="mb-12">
