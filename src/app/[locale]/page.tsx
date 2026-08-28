@@ -451,13 +451,13 @@ export default async function HomePage({
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 border-2 border-white text-base font-semibold rounded-lg text-white hover:bg-white hover:text-[#C8102E] transition-colors"
+              className="inline-flex items-center justify-center px-8 py-3.5 border-2 border-white text-base font-semibold rounded-lg text-white hover:bg-white hover:text-[#1a2744] transition-colors"
             >
               {t("cta.contactUs")}
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-semibold rounded-lg text-[#C8102E] bg-white hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-semibold rounded-lg text-[#1a2744] bg-white hover:bg-gray-100 transition-colors"
             >
               {t("cta.requestSamples")}
             </Link>
