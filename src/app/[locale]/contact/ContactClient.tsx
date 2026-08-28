@@ -65,27 +65,9 @@ export default function ContactClient({
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-gray-700 mb-1">
-                  {t("info.phone")}
+                  Phone / WhatsApp / WeChat / Zalo
                 </h3>
-                <p className="text-gray-600">{t("info.phoneValue")}</p>
-              </div>
-              <div>
-                <h3 className="text-sm font-semibold text-gray-700 mb-1">
-                  WhatsApp
-                </h3>
-                <p className="text-gray-600">{t("info.phoneValue")}</p>
-              </div>
-              <div>
-                <h3 className="text-sm font-semibold text-gray-700 mb-1">
-                  WeChat
-                </h3>
-                <p className="text-gray-600">{t("info.phoneValue")}</p>
-              </div>
-              <div>
-                <h3 className="text-sm font-semibold text-gray-700 mb-1">
-                  Zalo
-                </h3>
-                <p className="text-gray-600">{t("info.phoneValue")}</p>
+                <p className="text-gray-600">+86 18816486452</p>
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-gray-700 mb-1">
